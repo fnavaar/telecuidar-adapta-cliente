@@ -13,8 +13,8 @@
 - riscos_F1_T02: não confundir inspeção de estado com ingestão; não testar com dados reais; não registrar segredos; cobertura parcial se o mecanismo de gate ainda não existir no runtime
 - autorizacao_implementacao: confirmada em 2026-09-11T17:12:00-03:00 — “pode”
 - teste_humano: pendente
-- verificacao_automatica: em execução — prova de gate iniciada
+- verificacao_automatica: em execução — baseline confirmado; prova contratual iniciada; enforcement runtime ainda não localizado
 - aprendizado: pendente
-- ultima_acao: autorização explícita registrada e task movida para implementando antes da prova
-- proxima_acao: executar RED/GREEN/regressão do gate e registrar log sanitizado
+- ultima_acao: etapa atualizada para implementando antes da criação da evidência; baseline do Skip confirmado sem migrations, coleções financeiras ou dados
+- proxima_acao: registrar RED/GREEN/regressão e declarar cobertura real do gate
 - atualizado_em: 2026-09-11T17:12:00-03:00

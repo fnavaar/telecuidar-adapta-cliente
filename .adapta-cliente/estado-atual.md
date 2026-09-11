@@ -7,8 +7,8 @@
 - etapa: bloqueada
 - autorizacao_implementacao: ausente — proposta de B-106 recebida, mas incompleta e não aprovada
 - teste_humano: nao_aplicavel — nenhum spike ou alteração foi iniciado
-- verificacao_automatica: passou parcialmente — allowlist TESTE permanece vazia por listagem somente leitura; Skip sem integração/credencial Drive; proposta B-106 recebida sem credenciais, mas ainda falha nos requisitos de janela, orçamento e fallback manual idempotente
+- verificacao_automatica: passou parcialmente — allowlist TESTE permanece vazia por listagem somente leitura; Skip sem integração/credencial Drive; proposta B-106 agora tem escopo, responsável, janela de 30 minutos e orçamento máximo de R$ 0,00; ainda falta fallback manual idempotente
 - aprendizado: pendente
-- ultima_acao: complemento do B-106 recebido; escopo e revogação foram detalhados, mas janela e orçamento continuam ilimitados e a regra de parada não define reconciliação/fallback manual idempotente
-- proxima_acao: definir janela máxima, orçamento máximo e fallback manual idempotente antes de aprovar B-106
-- atualizado_em: 2026-09-11T20:22:00-03:00
+- ultima_acao: janela máxima de 30 minutos e orçamento máximo de R$ 0,00 registrados no B-106; nenhum segredo, OAuth ou acesso iniciado
+- proxima_acao: definir fallback manual idempotente e então aprovar B-106
+- atualizado_em: 2026-09-11T20:23:00-03:00

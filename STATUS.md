@@ -2,12 +2,13 @@
 
 - **Fase:** 1 — núcleo financeiro e rastreabilidade.
 - **Progresso:** 5/8 tasks concluídas (62,5%).
-- **Task ativa:** nenhuma; F1-T05 concluída. F1-T06 é a próxima task elegível, aguardando análise em novo pedido.
-- **Situação:** F1-T05 concluída após aceite humano da Champion. B-106 completo.
+- **Task ativa:** F1-T06 — vincular documentos com deduplicação, pendência e recuperação.
+- **Situação:** análise concluída; implementação bloqueada por dúvida de requisito. A pasta `TESTE` está vazia e não deve ser alterada.
 - **Champion:** Daniela.
-- **Contrato B-106:** OAuth2 com conta Google autorizada; escopo somente a pasta `TESTE` (`1S0vZYfRJl5VvlC3-uratZD4Dp0Jqr5Cl`); Daniela fará alterações/revogação; janela máxima de 30 minutos; orçamento máximo de R$ 0,00; fallback manual idempotente aprovado.
-- **Resultado F1-T05:** CA-1-013/014 aprovados; metadados da pasta `TESTE` reconhecidos com HTTP 200; listagem restrita retornou HTTP 200 e `files=[]`; sonda com identificador sintético fora da allowlist retornou HTTP 404 e nenhum item; secret-pattern scan e evidence-check limpos.
-- **Escopo preservado:** nenhum arquivo foi aberto, baixado, copiado, movido ou alterado; nenhum conteúdo, token, segredo ou credencial foi persistido; nenhum dado real foi ingerido no Skip.
-- **Limitação registrada:** timeout, revogação efetiva e fallback operacional não foram induzidos nesta prova; não estão marcados como aprovados por inferência. A chamada inicial HTTP 400 foi corrigida sem ampliar o escopo.
-- **Evidência:** `artifacts/f1-t05-spike-evidencia.md`; commit `6f3f87c1d853587d66914a7f770a48d1a6c9fe38`.
-- **Próxima ação:** aguardar novo pedido para analisar F1-T06; não iniciar implementação ou integração automaticamente.
+- **Pré-condições confirmadas:** F1-T04 concluída; F1-T05 concluída; B-106 fechado; nenhum dado real ingerido.
+- **Baseline Skip:** versão 0.0.6; coleções `lancamentos` e `lancamento_eventos`; migrations 0001/0002 aplicadas; apenas `.skip.config.json` pendente; sem segredo de Drive.
+- **Baseline da aplicação:** UI e API server-side cobrem autenticação, criação/listagem/correção/histórico de lançamentos; não existe coleção, endpoint ou tela de candidatos documentais/vínculos.
+- **DÚVIDA bloqueante:** a SPEC exige fixture sintética na prova, mas não define se ela deve ser apenas um candidato interno, se deve ser vinculada a um lançamento sintético novo ou a um lançamento já existente. Não criar arquivo em `TESTE`, não usar documento real e não escolher silenciosamente.
+- **Plano proposto após decisão:** adaptador server-side restrito; coleção de candidatos/vínculos com `source_id`, `source_ref`, `fingerprint`, `observed_at` e status; confirmação humana explícita; pendência com motivo; idempotência por fingerprint; três reprocessamentos; falha/timeout/revogação em modo manual; rollback sem tocar no Drive; UI acessível para revisar candidatos.
+- **Riscos:** não ampliar allowlist; não ler conteúdo/OCR/IA; não confirmar automaticamente; não alterar o contrato dos lançamentos sem definir o destino do vínculo; não marcar timeout/revogação como aprovados por inferência.
+- **Próxima ação:** cliente definir a fixture sintética e o destino do vínculo; depois a task volta a `aguardando_autorizacao` para autorização explícita da implementação.

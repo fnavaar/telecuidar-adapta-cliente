@@ -2,40 +2,19 @@
   "schema": "adapta-cliente-task-receipt/v1",
   "task_id": "F1-T02",
   "spec": "SPEC-1-001",
-  "status": "aguardando_teste_humano",
-  "authorization": {
-    "confirmed_at": "2026-09-11T17:12:00-03:00",
-    "message_excerpt": "pode"
-  },
-  "executed_at": "2026-09-11T17:27:00-03:00",
-  "criterion": {
-    "CA-1-006": {
-      "status": "PASSOU_AUTOMATICO",
-      "evidence": [
-        "Skip QA passed setup, static analysis, build, integrations and tests",
-        "POST /backend/v1/corte-gate/probe returned 403 POLICY_NOT_SEALED for policySealed=false",
-        "POST /backend/v1/corte-gate/probe returned 403 OUTSIDE_ALLOWLIST for insideAllowlist=false",
-        "POST /backend/v1/corte-gate/probe returned 200 GATE_PASS only for synthetic sealed TESTE metadata",
-        "POST with extra financial-shaped field returned 400 and was not persisted",
-        "three repeated GREEN probes returned 200 with persisted=false",
-        "request logs showed 2x 403, 1x 400 and 4x 200 without payload data",
-        "post-check: 0 migrations, only auth users collection, no financial collection or persistence"
-      ]
-    }
-  },
-  "tdd": {
-    "RED_policy_open": "PASS: runtime 403 POLICY_NOT_SEALED",
-    "RED_outside_allowlist": "PASS: runtime 403 OUTSIDE_ALLOWLIST",
-    "GREEN_sealed_inside": "PASS: runtime 200 GATE_PASS with persisted=false",
-    "invalid_input": "PASS: runtime 400 for extra financial-shaped field",
-    "regression": "PASS: three repeated GREEN probes; state unchanged"
-  },
-  "security": [
-    "synthetic metadata only",
-    "no real client data used",
-    "no secret or credential recorded",
-    "no spreadsheet or Drive item altered",
-    "no data discarded"
+  "status": "aprovada",
+  "completed_at": "2026-09-11T18:13:00-03:00",
+  "criteria": ["CA-1-006"],
+  "evidence": [
+    "QA version 0.0.4 passed setup, static analysis, build, integrations and tests",
+    "Preview end-to-end run displayed HTTP 403 POLICY_NOT_SEALED, HTTP 403 OUTSIDE_ALLOWLIST, HTTP 200 GATE_PASS and HTTP 400 for financial-shaped payload",
+    "Backend revalidation passed policy-open 403, outside-allowlist 403, sealed-inside 200 and invalid-input 400",
+    "Three repeated GREEN probes returned 200 GATE_PASS with persisted=false",
+    "Sanitized request logs confirm runtime responses without payload contents",
+    "Post-check confirms 0 migrations, only auth users collection, no financial collection and no persistence",
+    "Champion human acceptance confirmed at 2026-09-11T18:13:00-03:00: confirmado"
   ],
-  "next_action": "human test of the backend probe route"
+  "guards": ["synthetic metadata only", "zero persistence", "zero real client data", "zero discard", "outside allowlist rejected"],
+  "next_task": {"id": "F1-T03", "status": "elegible_aguardando_analise"},
+  "notes": "F1-T03 not started; no financial model or migration created."
 }

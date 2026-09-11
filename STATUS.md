@@ -3,12 +3,13 @@
 - **Fase:** 1 — núcleo financeiro e rastreabilidade.
 - **Progresso:** 2/8 tasks concluídas (25%).
 - **Concluídas:** F1-T01 — pacote documental de fontes, política e allowlist; F1-T02 — gate de zero ingestão e corte operacional.
-- **Aceite humano:** Daniela confirmou o teste do preview às 18:13 (“confirmado”).
-- **Próxima task elegível:** F1-T03 — formalizar catálogo e regras financeiras com exemplos.
-- **Situação:** F1-T03 aguarda análise e autorização explícita; nenhuma execução da F1-T03 foi iniciada.
-- **B-101:** fechado — planilha/amostra inventariadas e aceitas; P-1-001..003 preservadas, sem correção silenciosa.
-- **B-102:** fechado — pasta `TESTE` (`1S0vZYfRJl5VvlC3-uratZD4Dp0Jqr5Cl`) é a allowlist; fora dela e subpastas não listadas são recusados por padrão.
-- **B-103:** fechado — acesso e uso no Skip Cloud autorizados; retenção indefinida sem descarte, conforme confirmação da Champion.
-- **Verificação F1-T02:** aprovada — QA versão 0.0.4 verde; preview chamou rota real e exibiu 403/403/200/400 corretamente; regressão GREEN 3x passou; logs sanitizados; 0 migrations, apenas users, sem coleção financeira ou persistência.
-- **Segurança:** nenhum dado real, segredo, planilha/pasta ou arquivo do cliente foi alterado; nenhum dado foi ingerido ou descartado.
-- **Próxima ação:** analisar F1-T03; F1-T04 em diante permanecem bloqueadas.
+- **Task ativa:** F1-T03 — formalizar catálogo e regras financeiras com exemplos.
+- **Situação:** aguardando teste humano/aceite da Champion para B-104 e B-105.
+- **Champion:** Daniela.
+- **Artefatos F1-T03:** catálogo candidato, Anexo F draft e relatório de diff versionados em `anexos/`.
+- **B-101/B-102/B-103:** fechados.
+- **B-104:** pendente — catálogo candidato está estruturalmente igual ao Anexo E, mas ainda aguarda aprovação da Champion.
+- **B-105:** pendente — Anexo F contém RN-110..RN-114 e exemplos sintéticos, mas faltam decisões da Champion sobre obrigatoriedade, recusa/pendência, chave idempotente, totais e revisão.
+- **B-108:** projeto Skip identificado e acessível; nenhuma migration ou coleção financeira autorizada nesta task.
+- **Segurança:** nenhum dado real, segredo, planilha/pasta ou arquivo do cliente foi alterado; nenhuma migration, coleção financeira, modelo ou dado foi criado.
+- **Próxima ação:** Daniela revisar e aceitar/corrigir o catálogo e o Anexo F; F1-T04 em diante permanecem bloqueadas.

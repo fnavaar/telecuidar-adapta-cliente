@@ -21,3 +21,4 @@
 - 2026-09-11 · Daniela · DEBUG task F1-T02: enforcement runtime ausente → criado hook server-side de sonda sintética com recusa real, QA e regressão verdes → aguardando teste humano.
 - 2026-09-11 · Daniela · DEBUG task F1-T02: preview sem painel e status HTTP incorreto → painel sintético criado, leitura de erros corrigida, QA e teste ponta a ponta verdes → aguardando teste humano.
 - 2026-09-11 · Daniela · Task F1-T02 concluída: gate server-side provado com 403/403/200/400, regressão 3x GREEN, QA verde, preview aprovado pela Champion e Skip sem persistência financeira.
+- 2026-09-11 · Daniela · EXECUÇÃO task F1-T03: catálogo candidato e Anexo F draft criados; diff catálogo×Anexo E limpo; B-104/B-105 aguardam aceite humano; nenhum modelo/migration/dado real criado.

@@ -3,11 +3,11 @@
 - **Fase:** 1 — núcleo financeiro e rastreabilidade.
 - **Progresso:** 4/8 tasks concluídas (50%).
 - **Task ativa:** F1-T05 — executar spike timeboxed do mecanismo de acesso à pasta.
-- **Situação:** B-106 completo; aguardando autorização explícita para executar o spike. Nenhum acesso foi iniciado.
+- **Situação:** spike executado; aguardando teste humano da Champion. B-106 completo.
 - **Champion:** Daniela.
-- **Pré-condições confirmadas:** F1-T02 aceita; B-102/B-103/B-108 disponíveis; F1-T04 concluída.
-- **Contrato B-106 aprovado:** OAuth2 com conta Google autorizada; escopo somente a pasta `TESTE` (`1S0vZYfRJl5VvlC3-uratZD4Dp0Jqr5Cl`), sem ampliação; Daniela fará alterações/revogação; responsável Daniela Serpa; janela máxima de 30 minutos; orçamento máximo de R$ 0,00.
-- **Fallback manual idempotente aprovado:** diante de timeout, erro de permissão ou parada, não criar lançamento automaticamente; registrar `source_ref`, `fingerprint`, motivo e estado pendente quando disponíveis; reprocessamentos com a mesma referência/fingerprint não podem duplicar; reconciliação somente após confirmação humana.
-- **RED planejado:** sem B-106, fora da allowlist ou credencial inválida deve resultar em recusa/nenhum item listado; esta prova só pode começar após autorização do spike.
-- **Segurança:** nenhum arquivo do Drive foi baixado, lido, copiado, movido ou alterado; nenhum dado real foi ingerido; nenhuma credencial, segredo ou token foi compartilhado ou criado; produção não foi publicada.
-- **Próxima ação:** autorizar explicitamente a execução do spike OAuth2 timeboxed; depois executar somente a F1-T05.
+- **Contrato B-106:** OAuth2 com conta Google autorizada; escopo somente a pasta `TESTE` (`1S0vZYfRJl5VvlC3-uratZD4Dp0Jqr5Cl`); Daniela fará alterações/revogação; janela máxima de 30 minutos; orçamento máximo de R$ 0,00; fallback manual idempotente aprovado.
+- **Resultado automatizado:** metadados da pasta `TESTE` reconhecidos com HTTP 200; listagem restrita retornou HTTP 200 e `files=[]`; sonda com identificador sintético fora da allowlist retornou HTTP 404 e nenhum item; secret-pattern scan limpo.
+- **Escopo preservado:** nenhum arquivo foi aberto, baixado, copiado, movido ou alterado; nenhum conteúdo, token, segredo ou credencial foi persistido; nenhum dado real foi ingerido no Skip.
+- **Limitação registrada:** timeout, revogação efetiva e fallback operacional não foram induzidos nesta prova; não estão marcados como aprovados por inferência. A chamada inicial HTTP 400 foi corrigida sem ampliar o escopo.
+- **Evidência:** `artifacts/f1-t05-spike-evidencia.md` e commit do repositório com logs sanitizados.
+- **Próxima ação:** Daniela deve revisar a prova mínima e confirmar o teste humano; não iniciar F1-T06 antes desse aceite.

@@ -14,7 +14,7 @@
 - autorizacao_implementacao: confirmada em 2026-09-11T17:12:00-03:00 — “pode”
 - teste_humano: pendente — não solicitado porque a verificação automática falhou parcialmente
 - verificacao_automatica: falhou parcialmente — baseline e sonda contratual passaram; runtime enforcement não disponível, logo a recusa real de política aberta/fora da allowlist não foi exercitada; nenhuma migration, coleção financeira, arquivo de integração ou dado foi criado
-- aprendizado: pendente
+- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-09-11-1717-gate-runtime-ausente.md
 - ultima_acao: execução do TDD da F1-T02; baseline antes/depois confirmado e sonda contratual registrada, mas ausência do gate runtime impediu comprovação integral
-- proxima_acao: resolver a ausência do mecanismo runtime de recusa e repetir o TDD completo da F1-T02
+- proxima_acao: iniciar debug da F1-T02 para resolver ou delimitar a ausência do mecanismo runtime de recusa
 - atualizado_em: 2026-09-11T17:17:15-03:00

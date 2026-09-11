@@ -1,14 +1,13 @@
 # STATUS — Telecuidar / MAX Soluções
 
 - **Fase:** 1 — núcleo financeiro e rastreabilidade.
-- **Task ativa:** F1-T01 — solicitar, receber e validar o pacote de fontes.
-- **Situação:** aguardando teste humano da Champion após correção documental.
-- **Champion:** Daniela.
-- **Implementação do produto:** não iniciada.
-- **Pacote recebido:** planilha/amostra CUSTEIO_NOVO.xlsx validada; SHA-256 registrado no Anexo A.
-- **B-101:** documentado — planilha e amostra confirmadas; pendências P-1-001..003 preservadas.
-- **B-102:** fechado — pasta `TESTE` (`1S0vZYfRJl5VvlC3-uratZD4Dp0Jqr5Cl`) confirmada como vazia e registrada como referência de backup/allowlist; arquivos fora dela serão ignorados e não processados; sem cópia, download, movimentação ou alteração.
-- **B-103:** fechado documentalmente — acesso, armazenamento, autorização de uso no Skip Cloud, retenção indefinida e proibição de descarte registrados.
-- **Anexos:** A–E versionados em `anexos/`.
-- **Proibição:** zero ingestão real antes do aceite da F1-T01; nenhum dado pode ser descartado.
-- **Próxima ação:** Daniela revisar os anexos A–E e confirmar o teste humano; F1-T02 não iniciada.
+- **Progresso:** 1/8 tasks concluídas (12,5%).
+- **Concluída:** F1-T01 — pacote documental de fontes, política e allowlist.
+- **Única elegível:** F1-T02 — provar o gate de zero ingestão e selar o corte operacional.
+- **Situação:** F1-T02 aguarda autorização explícita; nenhuma implementação do produto foi iniciada.
+- **B-101:** fechado — planilha/amostra inventariadas e aceitas; P-1-001..003 preservadas, sem correção silenciosa.
+- **B-102:** fechado — pasta `TESTE` (`1S0vZYfRJl5VvlC3-uratZD4Dp0Jqr5Cl`) é a allowlist; fora dela e subpastas não listadas são recusados por padrão.
+- **B-103:** fechado de forma conservadora — acesso e uso no Skip Cloud autorizados; retenção sem descarte até nova decisão humana versionada.
+- **Segurança:** F1-T02 apenas prova o gate; não autoriza ingestão, modelagem, integração ou alteração da planilha/pasta.
+- **Regra simplificada:** somente dependências e bloqueios da task atual impedem seu início; detalhes de tasks futuras permanecem para suas respectivas etapas.
+- **Próxima ação:** autorizar F1-T02; executá-la isoladamente, registrar evidência e pedir teste humano antes da F1-T03.

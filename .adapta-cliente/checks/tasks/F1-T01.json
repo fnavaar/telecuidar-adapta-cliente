@@ -1,0 +1,37 @@
+{
+  "schema": "adapta-cliente-task-receipt/v1",
+  "task_id": "F1-T01",
+  "spec": "SPEC-1-001",
+  "status": "aprovada",
+  "completed_at": "2026-09-11T16:57:00-03:00",
+  "criteria": [
+    "CA-1-001",
+    "CA-1-002",
+    "CA-1-003",
+    "CA-1-004",
+    "CA-1-005"
+  ],
+  "evidence": [
+    "anexos/A-planilha.md",
+    "anexos/B-amostra.md",
+    "anexos/C-allowlist.md",
+    "anexos/D-politica.md",
+    "anexos/E-catalogo-observado.md"
+  ],
+  "human_acceptance": {
+    "champion": "Daniela",
+    "champion_at": "2026-09-11T16:51:00-03:00",
+    "consultor_authorization_at": "2026-09-11T16:57:00-03:00"
+  },
+  "guards": [
+    "zero ingestão na F1-T01",
+    "zero descarte",
+    "fora da allowlist recusado por padrão",
+    "retenção sem descarte até nova decisão versionada"
+  ],
+  "next_task": {
+    "id": "F1-T02",
+    "status": "elegivel_aguardando_autorizacao"
+  },
+  "notes": "P-1-001..003 permanecem registradas para tratamento pela task apropriada; não impedem o fechamento documental e não foram corrigidas silenciosamente."
+}

@@ -97,8 +97,8 @@ Um pacote de corte aceito pela Champion contendo: planilha e amostra com hash; i
 
 | ID | Task | Dono | SPEC | Critério | Recorte da prova | Evidência esperada | Pré-condições | Status |
 |---|---|---|---|---|---|---|---|---|
-| F1-T01 | Solicitar, receber e validar o pacote de fontes da Telecuidar | Consultor + Champion | SPEC-1-001 | CA-1-001..005 | RED dos bloqueios B-101..103 + GREEN dos anexos A–E | Anexos A–E com hashes, pendências P-1-NNN e aceites da Champion | Checks aprovados; canal com Champion | ELEGÍVEL |
-| F1-T02 | Provar o gate de zero ingestão e selar o corte operacional | Ethos + Consultor | SPEC-1-001 | CA-1-006 | REGRESSÃO: tentativa de avanço com B-103 aberto é recusada | Inspeção/export do estado do projeto e log sanitizado do gate | F1-T01 aceita; B-108 disponível para inspeção ou cobertura parcial registrada | BLOQUEADA por F1-T01 |
+| F1-T01 | Solicitar, receber e validar o pacote de fontes da Telecuidar | Consultor + Champion | SPEC-1-001 | CA-1-001..005 | RED dos bloqueios B-101..103 + GREEN dos anexos A–E | Anexos A–E com hashes, pendências P-1-NNN e aceites da Champion | Checks aprovados; canal com Champion | CONCLUÍDA — 2026-09-11 |
+| F1-T02 | Provar o gate de zero ingestão e selar o corte operacional | Ethos + Consultor | SPEC-1-001 | CA-1-006 | REGRESSÃO: tentativa de avanço incompleto é recusada | Inspeção/export do estado do projeto e log sanitizado do gate | F1-T01 aceita; B-108 disponível para inspeção ou cobertura parcial registrada | ELEGÍVEL — aguarda autorização explícita |
 
 ## Emendas
 

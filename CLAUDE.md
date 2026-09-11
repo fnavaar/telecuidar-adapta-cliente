@@ -7,9 +7,10 @@ Apoiar a construção do núcleo financeiro que substituirá a planilha dinâmic
 
 ## Protocolo
 - Fase atual: 1.
-- Única task elegível: F1-T01.
+- F1-T01 concluída documentalmente; única task elegível: F1-T02, ainda sem autorização de execução.
 - Não invente campo, fórmula, estado, permissão ou dado.
-- A planilha/amostra, allowlist e política são entregas da F1-T01.
-- Nenhum dado real antes do aceite humano da F1-T01.
+- A planilha/amostra, allowlist e política foram seladas na F1-T01.
+- F1-T02 prova o gate de zero ingestão; não ingere, modela ou integra dados.
+- Simplificação: bloqueios de tasks futuras não impedem a task elegível atual; preserve uma task por vez e o teste humano.
 - Uma task por vez; teste humano antes da próxima.
 - Ação externa exige confirmação imediata.

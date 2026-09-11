@@ -10,9 +10,9 @@
 - **Conteúdo:** o cliente confirmou que a pasta não contém arquivos; a listagem somente leitura também retornou zero itens visíveis.
 - **Função registrada:** referência de backup/allowlist para o projeto. Nenhuma cópia foi criada e nenhum arquivo foi baixado, movido ou alterado.
 
-## Recorte confirmado
+## Recorte
 
-- **Dentro:** a pasta identificada pelo ID acima. Atualmente não há arquivos dentro dela.
-- **Fora:** qualquer arquivo ou pasta que não esteja dentro da pasta allowlist `TESTE` será ignorado e não processado.
-- **Subpastas:** a regra de fora da allowlist também se aplica a itens que não estejam dentro do recorte autorizado; não há subpastas visíveis nesta validação.
-- **Regra de segurança aplicada nesta etapa:** nenhum item foi lido, copiado, ingerido ou alterado.
+- **Dentro:** a pasta identificada pelo ID acima; atualmente não há arquivos dentro dela.
+- **Fora:** qualquer item cujo ancestral não seja a pasta identificada acima é recusado por padrão; nova inclusão exige confirmação explícita da Champion e atualização versionada deste anexo.
+- **Subpastas:** recusadas por padrão enquanto não forem adicionadas nominalmente à allowlist.
+- **Regra de segurança:** negar por padrão fora da allowlist; nesta etapa nenhum item foi lido, copiado, ingerido ou alterado.

@@ -56,7 +56,7 @@
 - `P-1-001`: valor ausente em `DADOS` para `Classificação - Opção 4`.
 - `P-1-002`: 8 linhas de `CUSTEIO` sem `Data Vencimento`.
 - `P-1-003`: 59 linhas de `CUSTEIO` sem `Responsável Pagamento`.
-- `P-1-004`: prazo ou condição de retenção não definido na política.
-- `P-1-005`: recorte operacional para itens fora da pasta allowlist não confirmado.
+- `P-1-004` — **fechada em 2026-09-11:** retenção sem descarte até nova decisão explícita e versionada da Champion.
+- `P-1-005` — **fechada em 2026-09-11:** itens e subpastas fora da allowlist são recusados por padrão; inclusão exige confirmação explícita e atualização do Anexo C.
 
 Nenhuma pendência foi preenchida por suposição e nenhum dado foi descartado.

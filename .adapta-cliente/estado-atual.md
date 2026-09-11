@@ -1,14 +1,14 @@
 # Estado atual — Adapta Cliente
 
-- task_id: F1-T03
-- task_anterior: F1-T02 concluída em 2026-09-11
+- task_id: F1-T04
+- task_anterior: F1-T03 concluída em 2026-09-11
 - champion: Daniela
 - spec: 04_fase-atual/specs/spec-1-002-modelo-lancamentos.md
-- etapa: concluida
-- autorizacao_implementacao: confirmada em 2026-09-11T18:19:00-03:00 — “pode”
-- teste_humano: aprovado em 2026-09-11T18:38:00-03:00 — “Daniela revisou e aceitou o catálogo e o Anexo F da F1-T03.”
-- verificacao_automatica: passou — CA-1-007 e CA-1-008 revalidados; diff estrutural limpo; regras RN-110..RN-114, obrigatoriedade, recusa, idempotência, totais e revisão documentados; nenhuma migration, coleção financeira, modelo, rota de lançamento ou dado real criado
-- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-09-11-1838-f1-t03-aceite-documental.md
-- ultima_acao: F1-T03 concluída após revalidação independente e aceite humano da Champion; B-104 e B-105 fechados
-- proxima_acao: aguardar novo pedido para analisar a F1-T04
-- atualizado_em: 2026-09-11T18:38:00-03:00
+- etapa: aguardando_autorizacao
+- autorizacao_implementacao: ausente — análise da F1-T04 concluída; autorização não pode ser concedida enquanto a DÚVIDA de requisito permanecer aberta
+- teste_humano: pendente — após implementação, Daniela deverá testar aporte, saída, incompleto, correção e repetição no preview
+- verificacao_automatica: passou parcialmente — pré-condições B-104/B-105/B-108 confirmadas; baseline Skip sem migrations e somente coleção users; preview atual contém apenas a sonda F1-T02, com 4/4 cenários sintéticos aprovados; implementação bloqueada por ausência de definição aprovada para participante, referência documental e tipo/natureza aporte versus saída
+- aprendizado: pendente
+- ultima_acao: F1-T04 analisada em leitura; arquivos, baseline Skip, collections, migrations, hook, preview e referências oficiais inspecionados; nenhuma alteração de produto feita
+- proxima_acao: esclarecer a DÚVIDA sobre participante, referência documental e distinção aporte/saída antes de autorizar implementação
+- atualizado_em: 2026-09-11T18:49:00-03:00

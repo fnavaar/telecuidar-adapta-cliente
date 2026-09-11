@@ -1,14 +1,14 @@
 # STATUS — Telecuidar / MAX Soluções
 
 - **Fase:** 1 — núcleo financeiro e rastreabilidade.
-- **Progresso:** 2/8 tasks concluídas (25%).
-- **Task ativa:** F1-T03 — formalizar catálogo e regras financeiras com exemplos.
-- **Situação:** aguardando teste humano/aceite da Champion para B-104 e B-105.
+- **Progresso:** 3/8 tasks concluídas (37,5%).
+- **Task ativa:** nenhuma — F1-T03 concluída.
+- **Situação:** F1-T03 concluída após revalidação independente e aceite humano da Champion; F1-T04 é a próxima task elegível, mas ainda não foi analisada nem iniciada.
 - **Champion:** Daniela.
-- **Artefatos F1-T03:** catálogo candidato, Anexo F atualizado e relatório de diff versionados em `anexos/`.
+- **Artefatos F1-T03:** catálogo aprovado, Anexo F aprovado e relatório de diff versionados em `anexos/`.
 - **B-101/B-102/B-103:** fechados.
-- **B-104:** catálogo estruturalmente igual ao Anexo E; obrigatoriedade registrada conforme decisão recebida; aguarda revisão e aceite da Champion.
-- **B-105:** decisões de obrigatoriedade, recusa, chave de repetição, totais e revisão registradas; `Pendente` operacional entra nos totais, enquanto pendência de validação fica fora conforme RN-112; aguarda aceite da Champion.
-- **B-108:** projeto Skip identificado e acessível; nenhuma migration ou coleção financeira autorizada nesta task.
+- **B-104:** fechado — catálogo aprovado pela Champion e diff estrutural com Anexo E limpo.
+- **B-105:** fechado — Anexo F aprovado pela Champion; `Pendente` operacional entra nos totais, enquanto pendência de validação fica fora conforme RN-112.
+- **B-108:** projeto Skip identificado e acessível; nenhuma migration ou coleção financeira foi criada na F1-T03.
 - **Segurança:** nenhum dado real, segredo, planilha/pasta ou arquivo do cliente foi alterado; nenhuma migration, coleção financeira, modelo ou dado foi criado.
-- **Próxima ação:** Daniela revisar e aceitar o catálogo e o Anexo F; F1-T04 permanece bloqueada.
+- **Próxima ação:** aguardar novo pedido para analisar a F1-T04; não iniciar implementação por inferência.

@@ -1,9 +1,9 @@
-# Catálogo executável candidato — F1-T03
+# Catálogo executável aprovado — F1-T03
 
 - **Task/SPEC:** F1-T03 / SPEC-1-002
 - **Fonte de verdade estrutural:** Anexo E da F1-T01 e `CUSTEIO_NOVO.xlsx`
 - **SHA-256 da fonte:** `50b3dfd912d12d1de231aa43f4d7280730e0a16fcb39ef5c3e68222e9ed0166d`
-- **Status:** CANDIDATO — catálogo aprovado em princípio pela Champion; B-104 aguarda fechamento conjunto com a resolução da dúvida do Anexo F.
+- **Status:** APROVADO pela Champion Daniela em 2026-09-11; B-104 fechado.
 - **Limite:** este catálogo formaliza somente o que foi observado e as obrigatoriedades explicitamente informadas; não cria campo, valor, fórmula, participante, referência documental ou chave além das decisões registradas.
 
 ## Campos de `CUSTEIO`
@@ -23,8 +23,8 @@
 
 | Domínio | Valores observados | Situação |
 |---|---|---|
-| Forma de Pagamento | `Pagamento Imediato`; `Cartão de Crédito` | Igual ao Anexo E; decisão recebida |
-| Status do Pagamento | `Pago`; `Pendente`; `Em atraso`; `Cancelado` | Igual ao Anexo E; regra de totais ainda tem dúvida sobre `Pendente` |
+| Forma de Pagamento | `Pagamento Imediato`; `Cartão de Crédito` | Igual ao Anexo E; aprovado |
+| Status do Pagamento | `Pago`; `Pendente`; `Em atraso`; `Cancelado` | Igual ao Anexo E; regra de totais aprovada no Anexo F |
 | Classificação | `Despesa Operacional`; `Custo Serviço Prestado`; `Investimento/ Ativo Imobilizado` | Igual ao Anexo E; opção 4 vazia preservada |
 | Responsável Pagamento | `Antonio Jorge`; `Francisco Figueiredo`; `Geraldo Tadeu` | Igual ao Anexo E; vazios preservados |
 
@@ -35,6 +35,6 @@
 3. Nenhuma lacuna recebe default inventado.
 4. Nenhum campo, valor ou fórmula ausente na fonte é acrescentado nesta task.
 5. `P-1-001`, `P-1-002` e `P-1-003` permanecem visíveis.
-6. A chave de repetição informada para idempotência é `Descrição + Data Vencimento`; sua aplicação será formalizada no Anexo F.
+6. A chave de repetição aprovada para idempotência é `Descrição + Data Vencimento`; sua aplicação está formalizada no Anexo F.
 7. Este catálogo não autoriza migration, coleção financeira, rota de lançamento ou ingestão de dado real.
 8. Divergência entre este catálogo e o Anexo E bloqueia o próximo deploy/modelo.

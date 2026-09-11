@@ -1,15 +1,15 @@
-# Relatório de diff — catálogo candidato × Anexo E
+# Relatório de diff — catálogo aprovado × Anexo E
 
 - **Task/SPEC:** F1-T03 / SPEC-1-002
 - **Fonte:** `anexos/E-catalogo-observado.md`
-- **Candidato:** `anexos/catalogo-executavel-f1-t03.md`
+- **Candidato aprovado:** `anexos/catalogo-executavel-f1-t03.md`
 - **Fonte original:** `CUSTEIO_NOVO.xlsx`
 - **SHA-256:** `50b3dfd912d12d1de231aa43f4d7280730e0a16fcb39ef5c3e68222e9ed0166d`
 - **Método:** comparação automatizada das listas de campos, valores de domínio e lacunas estruturais extraídas dos dois documentos; nenhum valor de lançamento individual foi usado.
 
 ## Resultado
 
-**PASSOU — igualdade estrutural do catálogo candidato com o Anexo E.**
+**PASSOU — igualdade estrutural do catálogo aprovado com o Anexo E.**
 
 | Verificação | Resultado |
 |---|---|
@@ -19,7 +19,7 @@
 | Valores de Classificação | PASSOU — 3 valores observados; opção 4 continua vazia |
 | Valores de Responsável | PASSOU — 3 valores observados |
 | Lacunas P-1-001..003 | PASSOU — preservadas sem default |
-| Obrigatoriedade | PASSOU — os oito campos foram marcados obrigatórios conforme decisão recebida; essa regra comportamental pertence ao Anexo F |
+| Obrigatoriedade | PASSOU — os oito campos foram marcados obrigatórios conforme decisão aceita; essa regra comportamental pertence ao Anexo F |
 | Fórmulas, modelo e migration | NÃO APLICÁVEL nesta task — nenhum foi criado |
 
 ## Evidência do comando
@@ -35,4 +35,4 @@ mandatory_fields_received: PASS
 unexpected_catalog_item: none
 ```
 
-O diff estrutural está limpo. B-104 pode ser fechado após confirmação da consistência final; B-105 permanece bloqueado pela dúvida documentada no Anexo F.
+O diff estrutural está limpo. B-104 e B-105 estão fechados após a aprovação do catálogo e do Anexo F pela Champion. Nenhum modelo, migration ou dado real foi criado nesta task.

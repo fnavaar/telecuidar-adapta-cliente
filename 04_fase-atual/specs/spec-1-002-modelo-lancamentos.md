@@ -97,8 +97,8 @@ No preview, a Champion registra um aporte e uma saída controlados conforme o ca
 
 | ID | Task | Dono | SPEC | Critério | Recorte da prova | Evidência esperada | Pré-condições | Status |
 |---|---|---|---|---|---|---|---|---|
-| F1-T03 | Formalizar catálogo e regras financeiras com exemplos | Champion + Consultor | SPEC-1-002 | CA-1-007..008 | Diff catálogo×Anexo E + aceite do Anexo F | Relatório de diff, Anexo F, responsável/prazo e aceite da Champion | F1-T02 aceita; B-104; B-108; Champion disponível | BLOQUEADA por F1-T02/B-104/B-108 |
-| F1-T04 | Construir e provar lançamentos controlados no Skip | Ethos | SPEC-1-002 | CA-1-009..012 | GREEN aporte/saída/incompleto + REGRESSÃO correção/idempotência | Testes executados, capturas do preview, trilha append-only e recibo idempotente | F1-T03 aceita; B-105 fechado; projeto Skip autorizado | BLOQUEADA por F1-T03/B-105 |
+| F1-T03 | Formalizar catálogo e regras financeiras com exemplos | Champion + Consultor | SPEC-1-002 | CA-1-007..008 | Diff catálogo×Anexo E + aceite do Anexo F | Relatório de diff, Anexo F, responsável/prazo e aceite da Champion | F1-T02 aceita; B-104; B-108; Champion disponível | CONCLUÍDA — CA-1-007/008 aprovados em 2026-09-11 |
+| F1-T04 | Construir e provar lançamentos controlados no Skip | Ethos | SPEC-1-002 | CA-1-009..012 | GREEN aporte/saída/incompleto + REGRESSÃO correção/idempotência | Testes executados, capturas do preview, trilha append-only e recibo idempotente | F1-T03 aceita; B-105 fechado; projeto Skip autorizado | ELEGÍVEL — aguarda análise e autorização |
 
 ## Emendas
 

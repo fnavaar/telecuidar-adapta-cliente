@@ -9,7 +9,7 @@
 - **Implementação:** não iniciada.
 - **Pacote recebido:** planilha/amostra CUSTEIO_NOVO.xlsx validada; hash registrado no estado.
 - **B-101:** parcialmente fechado — planilha e amostra confirmadas; aceite final pendente por lacunas estruturais nomeadas.
-- **B-102:** aberto e bloqueante — cliente decidiu adiar a conexão com a pasta do Drive.
+- **B-102:** parcialmente fechado — ID/URL de uma pasta real do Drive foi validado por metadados (`TESTE`, `1S0vZYfRJl5VvlC3-uratZD4Dp0Jqr5Cl`); escopo dentro/fora e visibilidade dos itens ainda pendentes.
 - **B-103:** parcialmente esclarecido — acesso, armazenamento e proibição de descarte registrados; retenção e autorização de uso ainda precisam de definição explícita.
 - **Proibição:** zero ingestão real antes do aceite da F1-T01; nenhum dado pode ser descartado.
-- **Próxima ação:** aguardar definição da pasta allowlist e complementação da política.
+- **Próxima ação:** obter confirmação do escopo da pasta allowlist e complementação da política.

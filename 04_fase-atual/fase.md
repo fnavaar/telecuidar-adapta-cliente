@@ -5,7 +5,7 @@
 ## Tasks
 
 | ID | Task | Dono | SPEC | Critério | Subseção exata | Recorte da prova | Evidência esperada | Pré-condições | Ponto de parada | Leva | Status |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|---|---|---|
 | F1-T01 | Solicitar, receber e validar o pacote de fontes da Telecuidar | Consultor + Champion | SPEC-1-001 | CA-1-001..005 | Resultado observável; Dados e regras; Fluxo e recuperação | RED dos bloqueios B-101..103 + GREEN dos anexos A–E | Anexos A–E com hashes, pendências P-1-NNN e aceites da Champion | Checks aprovados; canal com Champion | Pacote documental aceito; nenhum dado ingerido e nenhuma modelagem iniciada | 1 | ELEGÍVEL |
 | F1-T02 | Provar o gate de zero ingestão e selar o corte operacional | Ethos + Consultor | SPEC-1-001 | CA-1-006 | TDD da SPEC; Instruções de execução para o Ethos | REGRESSÃO: tentativa de avanço com B-103 aberto é recusada | Inspeção/export do estado do projeto e log sanitizado do gate | F1-T01 aceita; B-108 disponível para inspeção ou cobertura parcial registrada | B-101..103 selados; gate recusa ingestão sem política | 2 | BLOQUEADA por F1-T01 |
 | F1-T03 | Formalizar catálogo e regras financeiras com exemplos | Champion + Consultor | SPEC-1-002 | CA-1-007..008 | Contexto e decisões fechadas; Contratos e regras | Diff catálogo×Anexo E + aceite do Anexo F | Relatório de diff, Anexo F, responsável/prazo e aceite da Champion | F1-T02 aceita; B-104; B-108; Champion disponível | Catálogo e Anexo F aprovados; nenhuma migration além do contrato aprovado | 3 | BLOQUEADA por F1-T02/B-104/B-108 |

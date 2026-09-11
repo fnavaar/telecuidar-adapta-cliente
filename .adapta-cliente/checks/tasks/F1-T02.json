@@ -1,0 +1,38 @@
+{
+  "schema": "adapta-cliente-task-receipt/v1",
+  "task_id": "F1-T02",
+  "spec": "SPEC-1-001",
+  "status": "em_correcao",
+  "authorization": {
+    "confirmed_at": "2026-09-11T17:12:00-03:00",
+    "message_excerpt": "pode"
+  },
+  "executed_at": "2026-09-11T17:17:15-03:00",
+  "criterion": {
+    "CA-1-006": {
+      "status": "FALHOU_PARCIAL",
+      "evidence": [
+        "Skip project 57934 running; preview remained the initial template",
+        "0 migrations before and after",
+        "only auth collection users before and after; no financial collection",
+        "application file list contains no gate or integration implementation",
+        "contract probe returned REJECT for policy-open and outside-allowlist cases",
+        "runtime enforcement was NOT_AVAILABLE; no real refusal request could be exercised"
+      ]
+    }
+  },
+  "tdd": {
+    "RED_policy_open": "contractual REJECT; runtime refusal not exercised",
+    "RED_outside_allowlist": "contractual REJECT; runtime refusal not exercised",
+    "GREEN_sealed_inside": "contractual ALLOW; no ingestion performed",
+    "regression": "post-check unchanged: 0 migrations, only auth users collection, no financial data surface"
+  },
+  "coverage": "partial",
+  "security": [
+    "no real client data used",
+    "no secret or credential recorded",
+    "no spreadsheet or Drive item altered",
+    "no data discarded"
+  ],
+  "next_action": "resolve runtime enforcement absence and repeat full TDD"
+}

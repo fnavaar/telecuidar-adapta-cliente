@@ -12,11 +12,12 @@
 | Armazenamento | Os dados podem ser armazenados no Skip Cloud. | Confirmado pelo cliente. |
 | Uso | O cliente autorizou o uso dos dados no Skip Cloud. | Confirmado explicitamente pelo cliente. |
 | Descarte | Nenhum dado pode ser descartado. | Confirmado explicitamente pelo cliente. |
-| Retenção | Prazo, marco de revisão ou condição temporal de retenção. | `[NÃO OBSERVÁVEL]`; pendência `P-1-004`. |
+| Retenção | Reter os dados indefinidamente. | Confirmado pelo cliente; não há prazo de descarte. |
 
 ## Limites
 
-- A proibição de descarte não foi convertida em prazo de retenção por inferência.
-- Até a definição de retenção, nenhum dado será descartado e a pendência permanece aberta.
+- “Reter indefinidamente” significa que não há prazo de descarte definido para os dados desta política.
+- Nenhum dado pode ser descartado, inclusive por substituição, limpeza ou encerramento da task.
 - O uso autorizado não equivale a autorização para alterar a planilha original, mover arquivos ou iniciar integração com o Drive.
 - A regra de zero ingestão real antes do aceite da F1-T01 foi preservada durante a correção.
+- Arquivos fora da pasta allowlist `TESTE` serão ignorados e não processados; essa regra está detalhada no Anexo C.

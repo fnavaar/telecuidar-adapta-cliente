@@ -1,13 +1,13 @@
 # Debug Summary — F1-T01
 
-**Task e problema:** F1-T01 / fechamento reprovado porque os anexos A–E exigidos pela SPEC-1-001 não existiam no repositório.
+**Task e problema:** F1-T01 / fechamento reprovado inicialmente porque os anexos A–E exigidos pela SPEC-1-001 não existiam no repositório; após a primeira correção, P-1-004 e P-1-005 permaneciam sem definição.
 
-**Reprodução:** inspeção da árvore do repositório após o aceite humano; não havia diretório `anexos/` nem os cinco arquivos nomeados na seção “Saídas” da SPEC.
+**Reprodução:** inspeção da árvore do repositório identificou inicialmente a ausência dos cinco anexos. Após sua criação, a leitura de `anexos/C-allowlist.md` e `anexos/D-politica.md` mostrou as lacunas explícitas de retenção e de tratamento de itens fora da allowlist.
 
-**Causa raiz:** os insumos haviam sido validados na conversa e no estado, mas não tinham sido materializados como artefatos versionados no handoff operacional.
+**Causa raiz:** os insumos haviam sido validados na conversa e no estado, mas não tinham sido materializados inicialmente como artefatos versionados; depois, duas regras de governança ainda dependiam de decisão da Champion.
 
-**Correção:** criados `anexos/A-planilha.md`, `B-amostra.md`, `C-allowlist.md`, `D-politica.md` e `E-catalogo-observado.md`, com hash, inventário estrutural, pasta allowlist, política confirmada e pendências explícitas. Também foi preservada a referência da pasta vazia como backup, sem cópia ou descarte.
+**Correção:** criados e depois atualizados os anexos A–E. A Champion confirmou retenção indefinida e determinou que arquivos fora da pasta allowlist `TESTE` sejam ignorados e não processados. As regras foram registradas nos Anexos C e D, sem alterar a planilha original, sem criar cópia e sem descartar dados.
 
-**Verificação automática:** artefatos criados dentro do recorte da SPEC; conteúdo limitado a metadados, estrutura, regras confirmadas e pendências; nenhum arquivo financeiro original foi incluído no repositório; nenhuma migration ou coleção de negócio foi criada no Skip; nenhum dado foi ingerido ou descartado.
+**Verificação automática:** os cinco anexos existem no repositório; CA-1-001 a CA-1-005 estão documentados; o hash e o catálogo estrutural da planilha estão registrados; B-102 está fechado; B-103 está documentado com acesso, armazenamento, uso, retenção indefinida e proibição de descarte; pendências P-1-001, P-1-002 e P-1-003 permanecem visíveis; nenhum arquivo financeiro original foi incluído; nenhuma migration ou coleção de negócio foi criada no Skip; nenhum dado foi ingerido ou descartado.
 
-**Pendências que impedem o fechamento:** `P-1-004` (retenção não definida) e `P-1-005` (recorte fora da pasta não confirmado). A task deve retornar ao teste/aceite humano após essas pendências serem resolvidas ou formalmente aceitas pela Champion.
+**Gate atual:** aguardando teste humano da Champion sobre os anexos A–E e as regras registradas. A F1-T01 não foi concluída nesta etapa e a F1-T02 não foi iniciada.

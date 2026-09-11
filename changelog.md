@@ -12,3 +12,4 @@
 - Daniela aceitou a F1-T01 em 2026-09-11T16:51:00-03:00, mas a revalidação independente reprovou o fechamento porque os anexos A–E exigidos pela SPEC não existiam no repositório.
 - 2026-09-11 · Daniela · DEBUG task F1-T01: anexos A–E ausentes → causa raiz: insumos validados não materializados no handoff → corrigido parcialmente; P-1-004/P-1-005 permanecem abertos.
 - Anexos A–E e Debug Summary criados; nenhum dado original, segredo, migration, ingestão ou descarte foi incluído.
+- 2026-09-11 · Daniela · DEBUG task F1-T01: P-1-004/P-1-005 sem definição → Champion confirmou retenção indefinida e ignorar/não processar fora da allowlist → corrigido; aguardando teste humano.

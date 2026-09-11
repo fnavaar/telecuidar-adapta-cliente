@@ -10,9 +10,9 @@
 - **Conteúdo:** o cliente confirmou que a pasta não contém arquivos; a listagem somente leitura também retornou zero itens visíveis.
 - **Função registrada:** referência de backup/allowlist para o projeto. Nenhuma cópia foi criada e nenhum arquivo foi baixado, movido ou alterado.
 
-## Recorte
+## Recorte confirmado
 
-- **Dentro:** a pasta identificada pelo ID acima; atualmente não há arquivos dentro dela.
-- **Fora:** o tratamento de itens localizados fora desse ID não foi exercitado nesta task. A regra explícita de inclusão/exclusão para arquivos fora da pasta está `[NÃO OBSERVÁVEL]` e permanece como pendência `P-1-005` até confirmação da Champion.
-- **Subpastas:** `[NÃO OBSERVÁVEL]`; não há itens visíveis para avaliar esse caso.
+- **Dentro:** a pasta identificada pelo ID acima. Atualmente não há arquivos dentro dela.
+- **Fora:** qualquer arquivo ou pasta que não esteja dentro da pasta allowlist `TESTE` será ignorado e não processado.
+- **Subpastas:** a regra de fora da allowlist também se aplica a itens que não estejam dentro do recorte autorizado; não há subpastas visíveis nesta validação.
 - **Regra de segurança aplicada nesta etapa:** nenhum item foi lido, copiado, ingerido ou alterado.

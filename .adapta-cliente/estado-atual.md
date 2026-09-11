@@ -3,11 +3,11 @@
 - task_id: F1-T01
 - champion: Daniela (confirmada pelo cliente)
 - spec: 04_fase-atual/specs/spec-1-001-fontes-politica-allowlist.md
-- etapa: em_correcao
+- etapa: aguardando_teste_humano
 - autorizacao_implementacao: ausente
-- teste_humano: aprovado em 2026-09-11T16:51:00-03:00 — “Aceito a F1-T01”; nova confirmação pendente após a correção documental
-- verificacao_automatica: passou parcialmente — anexos A–E criados e conteúdo estrutural validado; CA-1-001, CA-1-002 e CA-1-005 documentados; CA-1-003 permanece parcial por P-1-005; CA-1-004 permanece parcial por P-1-004; zero ingestão e zero descarte confirmados
+- teste_humano: pendente — revisar os anexos A–E e confirmar que as regras de retenção indefinida, não descarte e ignorar/não processar itens fora da allowlist estão corretas
+- verificacao_automatica: passou — anexos A–E existem e foram lidos; CA-1-001 a CA-1-005 documentados; B-102 fechado; B-103 documentado com acesso, armazenamento, uso autorizado, retenção indefinida e proibição de descarte; pendências P-1-001, P-1-002 e P-1-003 preservadas; inspeção do Skip sem migrations/coleções de negócio confirma zero ingestão
 - aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-09-11-1652-anexos-obrigatorios.md
-- ultima_acao: correção documental da F1-T01: criação dos anexos A–E e Debug Summary, sem tocar na planilha original ou no Skip
-- proxima_acao: confirmar retenção e regra para itens fora da pasta allowlist; depois repetir o aceite humano da F1-T01
-- atualizado_em: 2026-09-11T16:53:00-03:00
+- ultima_acao: correção da F1-T01 com registro das regras P-1-004 e P-1-005, seguida de verificação automática dos anexos e do baseline do Skip
+- proxima_acao: Champion revisar os anexos A–E e confirmar se o teste humano passou
+- atualizado_em: 2026-09-11T16:58:00-03:00

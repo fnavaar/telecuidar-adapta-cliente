@@ -4,11 +4,11 @@
 - task_anterior: F1-T02 concluída em 2026-09-11
 - champion: Daniela
 - spec: 04_fase-atual/specs/spec-1-002-modelo-lancamentos.md
-- etapa: bloqueada
+- etapa: aguardando_teste_humano
 - autorizacao_implementacao: confirmada em 2026-09-11T18:19:00-03:00 — “pode”
-- teste_humano: pendente — resolver a dúvida entre o status `Pendente` nos totais e a RN-112; depois confirmar aceite final de B-104/B-105
-- verificacao_automatica: falhou por conflito de requisito — catálogo candidato e diff estrutural passaram; decisões de obrigatoriedade, recusa, chave de repetição e revisão foram registradas; B-105 bloqueado porque `Pendente` foi marcado como total válido, mas RN-112 exclui itens em pendência; nenhuma migration, coleção financeira, modelo, rota de lançamento ou dado real criado
+- teste_humano: pendente — Daniela revisar e aceitar o catálogo candidato e o Anexo F; confirmação recebida resolveu a distinção entre status operacional `Pendente` e pendência de validação
+- verificacao_automatica: passou — distinção `Pendente` operacional versus pendência de validação registrada; RN-112 preservada; decisões de obrigatoriedade, recusa, chave de repetição, totais e revisão registradas; nenhuma migration, coleção financeira, modelo, rota de lançamento ou dado real criado
 - aprendizado: pendente
-- ultima_acao: decisões do Anexo F recebidas e registradas; conflito com RN-112 documentado como DÚVIDA bloqueante
-- proxima_acao: esclarecer se `Pendente` é status operacional distinto de pendência de validação ou se deve ficar fora dos totais
-- atualizado_em: 2026-09-11T18:31:00-03:00
+- ultima_acao: confirmação do cliente incorporada ao Anexo F; dúvida de compatibilidade com RN-112 resolvida sem alterar a SPEC
+- proxima_acao: Daniela revisar e aceitar o catálogo e o Anexo F
+- atualizado_em: 2026-09-11T18:34:00-03:00

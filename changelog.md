@@ -23,3 +23,4 @@
 - 2026-09-11 · Daniela · Task F1-T02 concluída: gate server-side provado com 403/403/200/400, regressão 3x GREEN, QA verde, preview aprovado pela Champion e Skip sem persistência financeira.
 - 2026-09-11 · Daniela · EXECUÇÃO task F1-T03: catálogo candidato e Anexo F draft criados; diff catálogo×Anexo E limpo; B-104/B-105 aguardam aceite humano; nenhum modelo/migration/dado real criado.
 - 2026-09-11 · Daniela · DÚVIDA F1-T03: `Pendente` marcado nos totais válidos conflita com RN-112, que exclui itens em pendência; B-105 bloqueado até distinção explícita ou revisão da regra.
+- 2026-09-11 · Cliente · decisão F1-T03: `Pendente` operacional entra nos totais; pendência de validação distinta fica fora conforme RN-112; dúvida resolvida e Anexo F atualizado, aguardando aceite humano da Champion.

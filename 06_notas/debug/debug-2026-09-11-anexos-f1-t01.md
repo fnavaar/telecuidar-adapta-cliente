@@ -10,4 +10,4 @@
 
 **Verificação automática:** os cinco anexos existem no repositório; CA-1-001 a CA-1-005 estão documentados; o hash e o catálogo estrutural da planilha estão registrados; B-102 está fechado; B-103 está documentado com acesso, armazenamento, uso, retenção indefinida e proibição de descarte; pendências P-1-001, P-1-002 e P-1-003 permanecem visíveis; nenhum arquivo financeiro original foi incluído; nenhuma migration ou coleção de negócio foi criada no Skip; nenhum dado foi ingerido ou descartado.
 
-**Gate atual:** aguardando teste humano da Champion sobre os anexos A–E e as regras registradas. A F1-T01 não foi concluída nesta etapa e a F1-T02 não foi iniciada.
+**Gate resolvido:** a Champion confirmou às 17:00 “tudo correto, testado e aprovado”. A verificação final confirmou P-1-004/P-1-005 fechadas no Anexo E, CA-1-001..005 demonstrados e zero ingestão. F1-T01 concluída; F1-T02 liberada apenas como elegível, sem autorização de execução.

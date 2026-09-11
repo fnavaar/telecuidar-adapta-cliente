@@ -4,11 +4,19 @@
 - task_anterior: F1-T02 concluída em 2026-09-11
 - champion: Daniela
 - spec: 04_fase-atual/specs/spec-1-002-modelo-lancamentos.md
-- etapa: sem_task
+- etapa: aguardando_autorizacao
 - autorizacao_implementacao: ausente
-- teste_humano: nao_aplicavel — F1-T03 ainda não analisada
-- verificacao_automatica: passou — F1-T02 revalidada do zero; CA-1-006 aprovado; QA versão 0.0.4 verde; preview e rota real exibiram 403/403/200/400; regressão 3x GREEN; 0 migrations, apenas coleção auth users, sem coleção financeira ou persistência
-- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-09-11-1717-gate-runtime-ausente.md
-- ultima_acao: conclusão formal da F1-T02 após confirmação humana de 2026-09-11T18:13:00-03:00 — “confirmado”
-- proxima_acao: iniciar análise da F1-T03 mediante novo pedido do cliente
-- atualizado_em: 2026-09-11T18:13:00-03:00
+- teste_humano: pendente — F1-T03 exige aceite da Champion para catálogo e Anexo F; não iniciado
+- verificacao_automatica: passou somente leitura — SPEC-1-002, Anexo E e planilha confirmam catálogo observável; não existe Anexo F, B-104 ou B-105 formalizados; Skip 57934 permanece sem migrations e sem coleção financeira; somente coleção auth `users`; UI atual é a sonda F1-T02
+- achados_catalogo: campos observados na aba CUSTEIO (Data Vencimento, Classificação, Descrição, Valor, Forma de Pagamento, Parcelamento, Status Pagamento, Responsável Pagamento); valores observados em DADOS para formas, status, classificações e responsáveis; P-1-001..003 permanecem lacunas e não podem virar default
+- achados_regras: a planilha contém fórmulas agregadas e quadros de cartão/investimento, mas não define de forma executável regras de obrigatório, participante de saída, pendência, correção append-only ou idempotência; Anexo F inexistente; não há base para criar migration/modelo
+- plano_F1_T03: (1) comparar catálogo candidato contra Anexo E; (2) elaborar Anexo F somente com decisões confirmadas pela Champion; (3) registrar exemplos entrada→resultado para aporte, saída, incompleto, correção, repetição e campos ausentes; (4) definir responsável e prazo/cadência de revisão; (5) executar diff automatizado catálogo×Anexo E; (6) obter aceite humano; não criar migration, coleção, modelo financeiro ou integração
+- matriz_F1_T03: CA-1-007 = catálogo executável exatamente igual ao Anexo E + diff limpo; CA-1-008 = Anexo F com regras/exemplos aceitos pela Champion
+- riscos_F1_T03: não inferir regra a partir de fórmula de planilha; não transformar lacunas P-1-001..003 em valores padrão; não misturar F1-T04; não usar dados reais no Anexo F sem decisão de escopo; divergência bloqueia deploy futuro
+- dependencias_F1_T03: Champion Daniela disponível; B-104 catálogo aprovado; B-105 regras financeiras com exemplos aprovados e responsável/prazo/cadência registrados; B-108 projeto Skip já identificado e acessível, mas nenhuma migration autorizada nesta task
+- autorizacao_implementacao: ausente
+- verificacao_automatica: pendente — análise concluída; execução não iniciada
+- aprendizado: pendente
+- ultima_acao: análise profunda da F1-T03, leitura da SPEC-1-002, inspeção estrutural da planilha sem alteração e baseline do Skip
+- proxima_acao: aguardar autorização para implementar F1-T03
+- atualizado_em: 2026-09-11T18:22:00-03:00

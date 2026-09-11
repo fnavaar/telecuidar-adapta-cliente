@@ -3,11 +3,11 @@
 - task_id: F1-T06
 - champion: Daniela
 - spec: 04_fase-atual/specs/spec-1-003-integracao-drive.md
-- etapa: bloqueada
-- autorizacao_implementacao: ausente — análise concluída; há dúvida material sobre fixture e destino do vínculo
+- etapa: aguardando_autorizacao
+- autorizacao_implementacao: ausente — decisões da fixture e do destino registradas; aguardando autorização explícita para implementar
 - teste_humano: pendente — somente após implementação e verificação automatizada
-- verificacao_automatica: passou parcialmente — baseline Skip 0.0.6 inspecionado; F1-T04 existente; F1-T05 concluída; nenhuma coleção de candidatos/vínculos e nenhum segredo Drive disponível
+- verificacao_automatica: passou parcialmente — baseline Skip 0.0.6 inspecionado; F1-T04/F1-T05 concluídas; nenhuma alteração de produto iniciada
 - aprendizado: pendente
-- ultima_acao: F1-T06 analisada em modo somente leitura; identificado que TESTE está vazia e que fixture/destino do vínculo não foram definidos
-- proxima_acao: definir fixture sintética e destino do vínculo da prova F1-T06
-- atualizado_em: 2026-09-11T20:33:00-03:00
+- ultima_acao: cliente confirmou fixture interna no sistema e novo lançamento sintético como destino do vínculo
+- proxima_acao: aguardar autorização explícita para implementar a F1-T06
+- atualizado_em: 2026-09-11T20:47:00-03:00

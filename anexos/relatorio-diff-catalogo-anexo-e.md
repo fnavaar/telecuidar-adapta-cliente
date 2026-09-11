@@ -19,6 +19,7 @@
 | Valores de Classificação | PASSOU — 3 valores observados; opção 4 continua vazia |
 | Valores de Responsável | PASSOU — 3 valores observados |
 | Lacunas P-1-001..003 | PASSOU — preservadas sem default |
+| Obrigatoriedade | PASSOU — os oito campos foram marcados obrigatórios conforme decisão recebida; essa regra comportamental pertence ao Anexo F |
 | Fórmulas, modelo e migration | NÃO APLICÁVEL nesta task — nenhum foi criado |
 
 ## Evidência do comando
@@ -30,7 +31,8 @@ status_values_match: PASS
 classification_values_match: PASS
 responsible_values_match: PASS
 known_pendencies_preserved: PASS
+mandatory_fields_received: PASS
 unexpected_catalog_item: none
 ```
 
-O diff estrutural está limpo. Isso não equivale ao aceite da Champion: B-104 depende da aprovação do catálogo e B-105 depende da aprovação do Anexo F e das decisões listadas nele.
+O diff estrutural está limpo. B-104 pode ser fechado após confirmação da consistência final; B-105 permanece bloqueado pela dúvida documentada no Anexo F.

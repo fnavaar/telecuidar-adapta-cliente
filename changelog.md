@@ -19,3 +19,4 @@
 - F1-T02 permanece única elegível e sem autorização de execução; nenhuma ingestão ou implementação iniciada.
 - 2026-09-11 · Daniela · EXECUÇÃO task F1-T02: baseline de zero ingestão confirmado; sonda contratual rejeitou política aberta e item fora da allowlist; enforcement runtime não disponível, portanto CA-1-006 não foi comprovado integralmente e a task permanece em correção.
 - 2026-09-11 · Daniela · DEBUG task F1-T02: enforcement runtime ausente → criado hook server-side de sonda sintética com recusa real, QA e regressão verdes → aguardando teste humano.
+- 2026-09-11 · Daniela · DEBUG task F1-T02: preview sem painel e status HTTP incorreto → painel sintético criado, leitura de erros corrigida, QA e teste ponta a ponta verdes → aguardando teste humano.

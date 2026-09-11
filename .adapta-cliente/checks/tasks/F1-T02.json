@@ -2,37 +2,40 @@
   "schema": "adapta-cliente-task-receipt/v1",
   "task_id": "F1-T02",
   "spec": "SPEC-1-001",
-  "status": "em_correcao",
+  "status": "aguardando_teste_humano",
   "authorization": {
     "confirmed_at": "2026-09-11T17:12:00-03:00",
     "message_excerpt": "pode"
   },
-  "executed_at": "2026-09-11T17:17:15-03:00",
+  "executed_at": "2026-09-11T17:27:00-03:00",
   "criterion": {
     "CA-1-006": {
-      "status": "FALHOU_PARCIAL",
+      "status": "PASSOU_AUTOMATICO",
       "evidence": [
-        "Skip project 57934 running; preview remained the initial template",
-        "0 migrations before and after",
-        "only auth collection users before and after; no financial collection",
-        "application file list contains no gate or integration implementation",
-        "contract probe returned REJECT for policy-open and outside-allowlist cases",
-        "runtime enforcement was NOT_AVAILABLE; no real refusal request could be exercised"
+        "Skip QA passed setup, static analysis, build, integrations and tests",
+        "POST /backend/v1/corte-gate/probe returned 403 POLICY_NOT_SEALED for policySealed=false",
+        "POST /backend/v1/corte-gate/probe returned 403 OUTSIDE_ALLOWLIST for insideAllowlist=false",
+        "POST /backend/v1/corte-gate/probe returned 200 GATE_PASS only for synthetic sealed TESTE metadata",
+        "POST with extra financial-shaped field returned 400 and was not persisted",
+        "three repeated GREEN probes returned 200 with persisted=false",
+        "request logs showed 2x 403, 1x 400 and 4x 200 without payload data",
+        "post-check: 0 migrations, only auth users collection, no financial collection or persistence"
       ]
     }
   },
   "tdd": {
-    "RED_policy_open": "contractual REJECT; runtime refusal not exercised",
-    "RED_outside_allowlist": "contractual REJECT; runtime refusal not exercised",
-    "GREEN_sealed_inside": "contractual ALLOW; no ingestion performed",
-    "regression": "post-check unchanged: 0 migrations, only auth users collection, no financial data surface"
+    "RED_policy_open": "PASS: runtime 403 POLICY_NOT_SEALED",
+    "RED_outside_allowlist": "PASS: runtime 403 OUTSIDE_ALLOWLIST",
+    "GREEN_sealed_inside": "PASS: runtime 200 GATE_PASS with persisted=false",
+    "invalid_input": "PASS: runtime 400 for extra financial-shaped field",
+    "regression": "PASS: three repeated GREEN probes; state unchanged"
   },
-  "coverage": "partial",
   "security": [
+    "synthetic metadata only",
     "no real client data used",
     "no secret or credential recorded",
     "no spreadsheet or Drive item altered",
     "no data discarded"
   ],
-  "next_action": "resolve runtime enforcement absence and repeat full TDD"
+  "next_action": "human test of the backend probe route"
 }

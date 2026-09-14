@@ -3,12 +3,13 @@
 - **Fase:** 1 — núcleo financeiro e rastreabilidade.
 - **Progresso:** 5/8 tasks concluídas (62,5%).
 - **Task ativa:** F1-T06 — vincular documentos com deduplicação, pendência e recuperação.
-- **Situação:** análise concluída; decisões da fixture e do destino registradas; aguardando autorização explícita para implementar.
+- **Situação:** implementação concluída; aguardando teste humano da Champion. F1-T07 permanece bloqueada até o aceite da F1-T06.
 - **Champion:** Daniela.
-- **Pré-condições confirmadas:** F1-T04 concluída; F1-T05 concluída; B-106 fechado; nenhum dado real ingerido.
-- **Decisões da prova:** fixture sintética será interna no Skip, sem criar arquivo na pasta `TESTE`; o vínculo apontará para um novo lançamento sintético.
-- **Baseline Skip:** versão 0.0.6; coleções `lancamentos` e `lancamento_eventos`; migrations 0001/0002 aplicadas; apenas `.skip.config.json` pendente; sem segredo de Drive.
-- **Baseline da aplicação:** UI e API server-side cobrem autenticação, criação/listagem/correção/histórico de lançamentos; não existe coleção, endpoint ou tela de candidatos documentais/vínculos.
-- **Plano fechado:** adaptador server-side restrito; coleção de candidatos/vínculos com `source_id`, `source_ref`, `fingerprint`, `observed_at` e status; confirmação humana explícita; pendência com motivo; idempotência por fingerprint; três reprocessamentos; falha/timeout/revogação em modo manual; rollback sem tocar no Drive; UI acessível para revisar candidatos.
-- **Limites:** não ampliar allowlist; não ler conteúdo/OCR/IA; não confirmar automaticamente; não usar documento real; não marcar timeout/revogação como aprovados por inferência.
-- **Próxima ação:** aguardar autorização explícita para implementar somente a F1-T06.
+- **Decisões da prova:** fixture sintética interna no Skip; nenhum arquivo criado na pasta `TESTE`; confirmação aponta para novo lançamento sintético.
+- **Entrega:** migration `0003_create_documento_vinculos`; coleções `documento_candidatos`, `documento_vinculos` e `documento_eventos`; rotas autenticadas de fixture, listagem, reprocessamento, confirmação, pendência, falha/fallback e rollback; serviço frontend e painel de revisão humana.
+- **QA:** Skip 0.0.7 (`9e7fefa`) passou em setup, análise estática, build, integrações e testes.
+- **Resultado automatizado:** CA-1-015/016/017/018 exercitados; criação e confirmação idempotentes; três reprocessamentos sem duplicidade; pendência com motivo sem lançamento; falha com fallback manual; rollback removeu candidato, vínculo e lançamento sintéticos; repetição do rollback idempotente; endpoint sem autenticação retornou HTTP 401.
+- **Segurança:** nenhum arquivo foi criado, aberto, baixado, copiado, movido ou alterado no Drive; nenhum conteúdo real foi lido; nenhum dado real foi ingerido; nenhum token, segredo ou credencial foi persistido; logs de hooks sem erros.
+- **Limitação:** revogação real do OAuth e timeout real do provedor não foram induzidos; o comportamento de recuperação foi provado com falha sintética autorizada.
+- **Evidência:** `artifacts/f1-t06-evidencia.md`.
+- **Próxima ação:** Daniela deve testar o caminho real no preview e confirmar se funcionou; não concluir F1-T06 nem iniciar F1-T07 antes do aceite.

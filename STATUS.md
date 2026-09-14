@@ -2,15 +2,13 @@
 
 - **Fase:** 1 — núcleo financeiro e rastreabilidade.
 - **Progresso:** 6/8 tasks concluídas (75%).
-- **Task ativa:** nenhuma; F1-T06 concluída.
-- **Próxima task:** F1-T07 — definir e conferir o primeiro período controlado; bloqueada por B-107 e aguardando novo pedido para análise.
-- **Situação:** F1-T06 concluída após aceite humano da Champion: “funcionou, está aprovado”.
+- **Task ativa:** F1-T07 — definir e conferir o primeiro período controlado.
+- **Situação:** análise realizada; implementação bloqueada por B-107 ausente. Nenhum período, fonte ou fronteira foi escolhido e aceito pela Champion.
 - **Champion:** Daniela.
-- **Decisões da prova:** fixture sintética interna no Skip; nenhum arquivo criado na pasta `TESTE`; confirmação aponta para novo lançamento sintético.
-- **Entrega F1-T06:** migration `0003_create_documento_vinculos`; coleções `documento_candidatos`, `documento_vinculos` e `documento_eventos`; rotas autenticadas de fixture, listagem, reprocessamento, confirmação, pendência, falha/fallback e rollback; serviço frontend e painel de revisão humana.
-- **QA:** Skip 0.0.7 (`9e7fefa`) passou em setup, análise estática, build, integrações e testes.
-- **Resultado revalidado:** CA-1-015/016/017/018 aprovados; criação e confirmação idempotentes; três reprocessamentos sem duplicidade; pendência com motivo sem lançamento; falha com fallback manual; falha após confirmação preservou o vínculo; rollback removeu candidato, vínculo e lançamento sintéticos; endpoint sem autenticação retornou HTTP 401.
-- **Segurança:** nenhum arquivo foi criado, aberto, baixado, copiado, movido ou alterado no Drive; nenhum conteúdo real foi lido; nenhum dado real foi ingerido; nenhum token, segredo ou credencial foi persistido; logs de hooks sem erros.
-- **Limitação:** revogação real do OAuth e timeout real do provedor não foram induzidos; o comportamento de recuperação foi provado com falha sintética autorizada. O checklist auxiliar `agents/verificador-de-entrega.md` não estava disponível no workspace; checklist equivalente foi executado inline.
-- **Evidência:** `artifacts/f1-t06-evidencia.md`.
-- **Próxima ação:** aguardar novo pedido; não iniciar F1-T07 automaticamente e não tratar B-107 como resolvido por inferência.
+- **Pré-condições:** F1-T04 e F1-T06 aceitas; B-103/B-105 disponíveis; B-107 ainda não registrado.
+- **SPEC-1-004 exige antes do primeiro dado:** período escolhido, fontes autorizadas, fronteira do recorte e aceite da Champion.
+- **Fontes consultadas:** Anexos A/B/D/E/F, planilha apenas como referência de conferência; nenhum lançamento individual foi copiado e nenhum dado real foi ingerido.
+- **DÚVIDA/BLOQUEIO B-107:** faltam período (datas ou competência), fontes autorizadas, fronteira (itens incluídos/excluídos), amostra controlada e decisão sobre dados reais versus fixtures sintéticas. Não escolher por inferência.
+- **Regras a preservar:** sem documento/participante = pendência; divergência sistema×planilha = pendência com causa; baseline não medido = `[ESTIMATIVA]`; período parcial deve ser rotulado parcial.
+- **Plano após B-107:** registrar recorte; executar RED fora do período; lançar/conferir item a item; nomear pendências; testar correção/reprocessamento; registrar baseline sem inventar meta; coletar aceite humano.
+- **Próxima ação:** Champion definir e aceitar B-107; depois a task volta para análise/autorização, sem implementação automática.

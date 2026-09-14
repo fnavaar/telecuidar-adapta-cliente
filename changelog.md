@@ -7,7 +7,7 @@
 - Planilha CUSTEIO_NOVO.xlsx recebida, validada e confirmada como amostra; inventário estrutural e pendências P-1-001..003 registrados.
 - Daniela confirmada como Champion; acesso declarado para Daniela e os três sócios; armazenamento declarado no Skip Cloud.
 - Cliente confirmou que nenhum dado pode ser descartado; retenção ainda não foi definida explicitamente em B-103.
-- Pasta Drive `TESTE`, ID `1S0vZYfRJl5VvlC3-uratZD4Dp0Jqr5Cl`, validada por metadados: TESTE, ID 1S0vZYfRJl5VvlC3-uratZD4Dp0Jqr5Cl, proprietária Daniela e não trashed; listagem sem itens visíveis; B-102 parcialmente fechado, escopo e visibilidade pendentes.
+- Pasta Drive `TESTE`, ID `1S0vZYfRJl5VvlC3-uratZD4Dp0Jqr5Cl`, validada por metadados: TESTE, ID 1S0vZYfJ5lVvlC3-uratZD4Dp0Jqr5Cl, proprietária Daniela e não trashed; listagem sem itens visíveis; B-102 parcialmente fechado, escopo e visibilidade pendentes.
 - 16:50 Cliente confirmou pasta Drive vazia; referência TESTE registrada como backup/allowlist sem cópia ou alteração. B-102 fechado; F1-T01 continua bloqueada por B-103 parcial e aceite humano pendente.
 - 16:56 F1-T01 corrigida parcialmente: anexos A-E e Debug Summary versionados no commit 8b50f826; verificação confirma artefatos e zero ingestão, mas retenção (P-1-004) e regra fora da allowlist (P-1-005) continuam abertas.
 - 17:01 Fechamento da F1-T01 reprovado após aprovação humana: Anexo E ainda listava P-1-004/P-1-005 abertas, contradizendo Anexos C/D; estado em correção no commit 85c1605d; F1-T02 não iniciada.
@@ -35,3 +35,4 @@
 - 20:31 · Daniela · Task F1-T05 concluída: CA-1-013/014 aprovados após revalidação independente, evidence-check e secret-pattern scan limpos; pasta TESTE permaneceu inalterada; aceite humano “validado”; F1-T06 elegível, não iniciada.
 - 20:33 · Ethos · ANÁLISE F1-T06 concluída sem alteração de produto: baseline Skip 0.0.6 e F1-T04 inspecionados; não existem candidatos/vínculos documentais; TESTE está vazia; DÚVIDA bloqueante sobre fixture sintética e destino do vínculo; implementação não autorizada nem iniciada.
 - 20:47 · Cliente · decisões F1-T06 registradas: fixture sintética interna no Skip, sem criar arquivo na pasta TESTE; vínculo destinado a novo lançamento sintético; task aguarda autorização explícita para implementar.
+- 13:43 · Ethos · ANÁLISE F1-T07 concluída sem alteração de produto: SPEC-1-004 exige B-107 com período, fontes, fronteira e aceite da Champion antes do primeiro dado; B-107 não localizado nos diretórios operacionais; nenhuma planilha ou dado real foi alterado ou ingerido.

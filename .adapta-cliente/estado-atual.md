@@ -3,11 +3,11 @@
 - task_id: F1-T07
 - champion: Daniela
 - spec: 04_fase-atual/specs/spec-1-004-periodo-baseline.md
-- etapa: aguardando_autorizacao
-- autorizacao_implementacao: anterior confirmada em 2026-09-14T14:56:00-03:00 — “sim”; recorte alterado exige nova autorização específica
-- teste_humano: falhou em 2026-09-15T12:51:00-03:00 — Daniela informou que o item 3 misturou Internet Starlink (R$339,00) com Internet Vivo (R$99,99)
-- verificacao_automatica: análise de fontes passou; implementação do novo recorte pendente
+- etapa: implementando
+- autorizacao_implementacao: confirmada em 2026-09-15T13:05:00-03:00 — “Sim, implementar este recorte de 4 itens sem divergência”
+- teste_humano: pendente — novo teste somente após QA e smoke do recorte emendado
+- verificacao_automatica: pendente — implementação do recorte de 4 itens iniciada
 - aprendizado: pendente
-- ultima_acao: emenda B-107 registrada: 4 lançamentos, sem cenário divergente; conflito com SPEC-1-004 preservado
-- proxima_acao: aguardar autorização explícita para implementar o recorte emendado de 4 itens sem divergência
-- atualizado_em: 2026-09-15T13:01:00-03:00
+- ultima_acao: autorização específica registrada para a emenda B-107; nenhuma alteração de produto feita antes deste registro
+- proxima_acao: expandir formulário, schema e rota para Papel de Parede, Adapta, Starlink e Vivo sem cenário divergente
+- atualizado_em: 2026-09-15T13:05:00-03:00

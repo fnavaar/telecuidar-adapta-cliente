@@ -4,7 +4,8 @@
 **SPEC:** SPEC-1-004 — Primeiro período controlado, histórico e baseline  
 **Pré-condição:** F1-T07 aceita pela Champion em 2026-09-15  
 **Preview:** `https://financeiro-telecuidar-91e6d--preview.goskip.app`  
-**Versão Skip final:** 0.0.20 (`1211cfc`)  
+**Versão Skip implementada:** 0.0.20 (`1211cfc`)  
+**Correção de ambiente:** 0.0.21 (`027719e`)  
 **Migration:** `0006_periodo_historico_baseline` aplicada
 
 ## Implementação
@@ -14,7 +15,7 @@
 - Endpoint autenticado de reprocessamento idempotente: registra o evento sem criar itens ou lançamentos duplicados.
 - Coleção `periodo_baselines` para registrar tipo (`medido`/`estimativa`), métrica, unidade, resultado, fonte, método e observações.
 - Validação: resultado do tipo `estimativa` exige o marcador `[ESTIMATIVA]`; não há meta ou alvo automático.
-- Correções de compatibilidade do runtime PocketBase: removido spread incompatível no hook de reprocessamento e corrigida a referência do array de eventos no histórico.
+- Correção de ambiente: limpeza autenticada e idempotente das três fixtures legadas da F1-T04, protegida por allowlist de IDs e metadados.
 
 ## Critérios e provas automatizadas
 
@@ -37,27 +38,36 @@
 - Repetição do mesmo baseline: HTTP 200 idempotente, sem novo registro.
 - Histórico final retornou HTTP 200 com o baseline persistido.
 
+### Limpeza do ambiente sintético
+
+**PASSOU.**
+
+- Antes: exatamente os três lançamentos legados F1-T04 identificados por ID, descrição, data, valor, referência documental e tipo.
+- Limpeza restrita: HTTP 200, removeu exatamente os IDs `d3irl8lgoz0vjc7`, `y8qisnzjjaqnte3` e `00v5e6vlern16rb`.
+- Segunda chamada: HTTP 200 idempotente, `removidos=0`, `ausentes=3`.
+- Após a limpeza: listagem de lançamentos sem registros; nenhum lançamento fora da allowlist foi tocado.
+- Histórico do período B-107: HTTP 200, status `rollback`, sem itens, sem pendências e sem total válido.
+
 ## QA e segurança
 
 - QA oficial Skip 0.0.20 (`1211cfc`): setup, análise estática, build, integrações e testes — todos OK.
+- QA da correção Skip 0.0.21 (`027719e`): setup, análise estática, build, integrações e testes — todos OK.
 - Migration 0006 aplicada.
-- Os erros encontrados no primeiro smoke foram corrigidos e revalidados após novo deploy.
 - Nenhum PDF foi baixado ou aberto; nenhum dado real foi ingerido ou alterado.
-- A fixture atual é sintética e permanece disponível no preview para o teste humano; deve ser removida com o botão `Rollback do recorte` após a validação.
+- A causa e a correção estão registradas em `06_notas/debug/debug-2026-09-15-f1-t08-fixtures-legadas.md`.
+- A fixture B-107 continua sintética; após novo teste humano, usar `Rollback do recorte` para removê-la caso seja reaberta.
 - Não publicar nem iniciar F2 nesta task.
 
-## Roteiro de teste humano
+## Roteiro de novo teste humano
 
 1. Abrir o preview e entrar com seu acesso.
-2. Conferir o painel `Demonstração F1-T08 · histórico e baseline`: período `2026-08`, 4 itens, 3 conferidos, 1 pendência e 3 rastreáveis.
-3. Abrir o histórico do `Papel de Parede` e confirmar eventos `Criacao` e `Correcao`, com antes/depois, ator, correlação e horário.
-4. No painel de demonstração, clicar `Reprocessar sem duplicar`; esperar mensagem de sucesso com zero novos itens e zero novos lançamentos.
-5. Conferir o cartão do baseline com marcador `[ESTIMATIVA]`, unidade, fonte e método.
-6. Clicar `Rollback do recorte` no painel B-107 e confirmar a remoção de 4 itens e 3 lançamentos sintéticos.
+2. Confirmar que a lista `Lançamentos registrados` não exibe mais os três lançamentos legados da F1-T04.
+3. Se o recorte B-107 estiver aberto no ambiente, conferir o painel de demonstração: histórico, baseline `[ESTIMATIVA]` e reprocessamento sem duplicidade.
+4. Confirmar que nenhum registro real ou lançamento fora das três fixtures foi removido.
+5. Se o B-107 tiver sido reaberto para a validação, executar `Rollback do recorte` ao final.
 
-**Resultado esperado:** todos os passos funcionam sem erro, sem duplicar lançamentos e sem alterar dados reais.  
-**Falha:** qualquer erro HTTP, ausência de antes/depois, criação de novo lançamento no reprocessamento, baseline sem `[ESTIMATIVA]` ou resíduos após rollback.
+**Resultado esperado:** os três lançamentos legados não aparecem mais; nenhum dado real é afetado; histórico, baseline, reprocessamento e rollback continuam funcionando.
 
 ## Estado de parada
 
-Implementação e verificações automatizáveis concluídas. A F1-T08 aguarda teste humano da Champion; não concluir nem iniciar outra task antes da confirmação.
+A correção foi implementada e verificada. A F1-T08 aguarda novo teste humano da Champion; não concluir nem iniciar outra task antes da confirmação.

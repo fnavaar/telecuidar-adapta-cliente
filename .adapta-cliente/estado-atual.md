@@ -3,11 +3,11 @@
 - task_id: F1-T08
 - champion: Daniela
 - spec: 04_fase-atual/specs/spec-1-004-periodo-baseline.md
-- etapa: em_correcao
+- etapa: aguardando_teste_humano
 - autorizacao_implementacao: confirmada em 2026-09-15T14:57:00-03:00 — “Sim, implementar F1-T08 conforme este plano”
-- teste_humano: falhou em 2026-09-15T15:32:00-03:00 — “tudo funcionou com exceção dos tres lançamentos inciais que ainda permanecem”
-- verificacao_automatica: pendente — teste humano encontrou três lançamentos sintéticos iniciais remanescentes; causa e correção em investigação
-- aprendizado: pendente — triagem será feita no fechamento após novo aceite humano
-- ultima_acao: teste humano da F1-T08 funcionou nos critérios de histórico, reprocessamento e baseline, mas reportou três lançamentos iniciais remanescentes
-- proxima_acao: identificar os três registros, confirmar que são fixtures sintéticas fora do B-107 e aplicar correção mínima de limpeza/isolamento
-- atualizado_em: 2026-09-15T15:32:00-03:00
+- teste_humano: pendente — novo teste deve confirmar ausência das três fixtures legadas F1-T04 e preservar histórico, baseline, reprocessamento e rollback do B-107
+- verificacao_automatica: passou — QA Skip 0.0.21 (`027719e`) completo; limpeza allowlisted removeu exatamente 3 IDs legados F1-T04; segunda chamada idempotente; B-107 sem resíduos
+- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-09-15-1537-isolar-fixtures-por-task.md
+- ultima_acao: debug concluído; causa confirmada como fixtures legadas F1-T04 sem rotina própria de limpeza; correção restrita implementada e verificada
+- proxima_acao: novo teste humano de Daniela no preview e confirmação explícita do resultado
+- atualizado_em: 2026-09-15T15:37:07-03:00

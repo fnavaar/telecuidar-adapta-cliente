@@ -1,4 +1,4 @@
-# AP-2026-09-15-1315 — Separar cobranças independentes antes da conferência
+# AP-2026-09-15 — Separar cobranças independentes antes da conferência
 
 - Status: candidato
 - Escopo: projeto do cliente
@@ -10,5 +10,3 @@
 - Quando não aplicar: quando a mesma despesa tiver uma única identidade documental e os valores realmente divergirem entre fontes.
 - Confiança: alta — confirmado por duas planilhas, metadados documentais, smoke automatizado e teste humano aprovado.
 - Privacidade: sem segredo, dado pessoal ou conteúdo bruto.
-
-- 2026-09-15 · task F1-T07 · aprendizado: emendas operacionais devem preservar a SPEC original, explicitar limitações não exercitadas e adaptar o schema/painel apenas ao recorte autorizado; evidência `artifacts/f1-t07-evidencia.md`.

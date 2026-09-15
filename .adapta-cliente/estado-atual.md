@@ -3,11 +3,11 @@
 - task_id: F1-T07
 - champion: Daniela
 - spec: 04_fase-atual/specs/spec-1-004-periodo-baseline.md
-- etapa: aguardando_teste_humano
+- etapa: concluida
 - autorizacao_implementacao: confirmada em 2026-09-15T13:05:00-03:00 — “Sim, implementar este recorte de 4 itens sem divergência”
-- teste_humano: pendente — Daniela deve validar os quatro cartões, Starlink/Vivo separados, Adapta pendente e rollback
-- verificacao_automatica: passou — QA Skip 0.0.16 completo; migration 0005 aplicada; smoke HTTP 200/201 registrou 4 itens, 3 lançamentos e 1 pendência; Starlink R$339/fatura própria e Vivo R$99,99/fatura própria; rollback removeu 4 itens/3 lançamentos; ambiente limpo; secret/evidence scans limpos
-- aprendizado: pendente
-- ultima_acao: recorte B-107 emendado implementado e verificado; evidência atualizada em artifacts/f1-t07-evidencia.md
-- proxima_acao: teste humano de Daniela no preview e confirmação explícita do resultado
-- atualizado_em: 2026-09-15T13:05:00-03:00
+- teste_humano: aprovado em 2026-09-15T13:15:00-03:00 — “tudo correto”
+- verificacao_automatica: passou — revalidação independente HTTP 200/201; 4 itens (3 rastreáveis, 1 pendente); Starlink/Vivo separados; rollback removeu 4 itens/3 lançamentos; ambiente limpo; QA 0.0.16; migration 0005; secret/evidence scans limpos
+- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-09-15-1315-separar-cobrancas-independentes.md
+- ultima_acao: F1-T07 concluída após aceite humano explícito; F1-T08 permanece bloqueada e não foi iniciada
+- proxima_acao: aguardar novo pedido para analisar a F1-T08; não iniciar automaticamente
+- atualizado_em: 2026-09-15T13:15:00-03:00

@@ -1,41 +1,84 @@
-# Changelog
+# Evidência F1-T07 — Primeiro período controlado B-107
 
-## 2026-09-11
-- Workspace operacional da Fase 1 criado.
-- Quatro SPECs e oito tasks liberadas documentalmente.
-- Somente F1-T01 elegível; nenhuma implementação ou ingestão iniciada.
-- Planilha CUSTEIO_NOVO.xlsx recebida, validada e confirmada como amostra; inventário estrutural e pendências P-1-001..003 registrados.
-- Daniela confirmada como Champion; acesso declarado para Daniela e os três sócios; armazenamento declarado no Skip Cloud.
-- Cliente confirmou que nenhum dado pode ser descartado; retenção ainda não foi definida explicitamente em B-103.
-- Pasta Drive `TESTE`, ID `1S0vZYfRJl5VvlC3-uratZD4Dp0Jqr5Cl`, validada por metadados: TESTE, ID 1S0vZYfRJl5VvlC3-uratZD4Dp0Jqr5Cl, proprietária Daniela e não trashed; listagem sem itens visíveis; B-102 parcialmente fechado, escopo e visibilidade pendentes.
-- 16:50 Cliente confirmou pasta Drive vazia; referência TESTE registrada como backup/allowlist sem cópia ou alteração. B-102 fechado; F1-T01 continua bloqueada por B-103 parcial e aceite humano pendente.
-- 16:56 F1-T01 corrigida parcialmente: anexos A-E e Debug Summary versionados no commit 8b50f826; verificação confirma artefatos e zero ingestão, mas retenção (P-1-004) e regra fora da allowlist (P-1-005) continuam abertas.
-- 17:01 Fechamento da F1-T01 reprovado após aprovação humana: Anexo E ainda listava P-1-004/P-1-005 abertas, contradizendo Anexos C/D; estado em correção no commit 85c1605d; F1-T02 não iniciada.
-- 17:06 F1-T01 concluída documentalmente após revalidação: Anexo E corrigido; recibo F1-T01 aprovado; fase registra 1/8 concluídas e F1-T02 única elegível, sem ingestão ou implementação.
-- 17:10 F1-T02 analisada sem implementação: SPEC-1-001, dependências e baseline do Skip 57934 confirmados; estado persistido como aguardando autorização no commit 248d7c2.
-- 17:28 F1-T02 corrigida: hook server-side corte_gate_probe.js publicado no Skip 57934; QA e rota real passaram 403/403/200/400, regressão 3x 200, sem migrations/coleções financeiras/persistência; estado aguarda teste humano no commit 92eb3632.
-- 18:15 F1-T02 concluída após teste humano de Daniela: hook server-side, QA, preview e rota real passaram 403/403/200/400 e regressão 3x 200; progresso 2/8; F1-T03 única elegível aguardando análise, sem modelo financeiro ou ingestão.
-- 18:17 F1-T03 analisada sem implementação: SPEC-1-002, catálogo da planilha e baseline do Skip confirmados; Anexo F/B-104/B-105 inexistentes; estado persistido como aguardando autorização no commit c1ef58ac.
-- 18:21 F1-T03 executada parcialmente: catálogo candidato, Anexo F draft e diff catálogo×Anexo E versionados no commit 552f8a92; diff estrutural limpo, B-104/B-105 aguardam aceite da Champion; Skip sem modelo financeiro.
-- 18:26 Cliente confirmou que as pendências P-1-001..003 foram corretamente descritas; permanecem abertas sem defaults ou correção silenciosa enquanto F1-T03 aguarda decisões do Anexo F.
-- 18:35 F1-T03: distinção confirmada entre status operacional Pendente (entra nos totais) e pendência de validação (fora conforme RN-112); Anexo F/estado/STATUS/fase atualizados no commit fdcdb934 e validação independente passou; aguarda aceite humano de Daniela.
-- 18:41 F1-T03 concluída após aceite humano de Daniela às 18:38; CA-1-007/008, diff limpo e aceite da Champion; F1-T04 ficou elegível, sem análise ou implementação iniciada.
-- 18:54 F1-T04 analisada: baseline Skip 57934 sem migrations e só users; preview é sonda F1-T02 4/4; nenhuma coleção financeira ou persistência. Dúvida bloqueante: definir participante, referência documental e distinção/modelagem de aporte versus saída; análise registrada no commit 2232ebd.
-- 18:57 F1-T04: cliente decidiu reutilizar Responsável Pagamento como participante, referência documental como texto obrigatório e Tipo de lançamento obrigatório (Aporte/Saída); plano registrado no commit af84aed, aguarda autorização explícita para implementar.
-- 19:15 F1-T04: QA 0.0.6 passou; migration 0002 corrigiu booleano pendencia_validacao; preview comprovou criação, idempotência e pendência fora do total. Correção append-only ainda não chegou ao endpoint, task permanece em correção; resumo em artifacts/debug-f1-t04-status.md.
-- 19:18 F1-T04: submissão append-only reproduzida com HTTP 200; correção atualizou o registro e o histórico exibiu Criacao/Correcao com antes/depois, ator, correlação e timestamps; QA e regressão passaram; task aguarda teste humano.
-- 19:25 · Daniela · Task F1-T04 concluída: CA-1-009..012 aprovados; aporte/saída, incompleto, correção append-only, histórico e idempotência revalidados; QA 0.0.6 e aceite humano “funcionou”; nenhuma migration adicional ou dado real criado.
-- 19:31 · Daniela · ANÁLISE F1-T05: allowlist TESTE permanece vazia; Skip 57934 não possui integração/credencial Drive, apenas variáveis e segredos sistêmicos; DÚVIDA/BLOQUEIO B-106: faltam mecanismo, escopo, conta autorizadora, revogação, dono, janela e orçamento máximo; nenhum spike, segredo ou acesso a dados reais iniciado.
-- 20:18 · Cliente · proposta B-106 recebida como incompleta: OAuth2 com conta Google autorizada, responsável Daniela Serpa e teste somente; sem escopo exato, revogação, janela, orçamento ou fallback operacional; nenhuma credencial persistida e nenhum acesso iniciado.
-- 20:22 · Cliente · complemento B-106: escopo somente pasta TESTE e Daniela fará alterações; janela e orçamento seguem ilimitados; regra de parada apenas por erro de permissão, sem fallback manual idempotente; B-106 continua incompleto e F1-T05 bloqueada.
-- 20:23 · Cliente · janela máxima de 30 minutos e orçamento máximo de R$ 0,00 registrados no B-106; falta apenas fallback manual idempotente; nenhum acesso iniciado.
-- 20:26 · Cliente · fallback manual idempotente confirmado: em erro, timeout ou parada não criar lançamento automaticamente; registrar source_ref, fingerprint, motivo e estado pendente quando disponíveis; reprocessamento não duplica; B-106 fechado e F1-T05 aguarda autorização explícita do spike.
-- 20:27 · Cliente · autorização explícita recebida para executar o spike OAuth2 da F1-T05; estado passou a implementando no commit 77ba670.
-- 20:27 · Ethos · spike OAuth2 executado com leitura somente de metadados/listagem da pasta allowlist TESTE; pasta reconhecida, listagem HTTP 200 sem itens; sonda sintética fora da allowlist HTTP 404 sem itens; nenhum conteúdo, arquivo, segredo ou dado real acessado. Evidência sanitizada em `artifacts/f1-t05-spike-evidencia.md`; secret-pattern scan limpo; task aguarda teste humano.
-- 20:31 · Daniela · Task F1-T05 concluída: CA-1-013/014 aprovados após revalidação independente, evidence-check e secret-pattern scan limpos; pasta TESTE permaneceu inalterada; aceite humano “validado”; F1-T06 elegível, não iniciada.
-- 20:33 · Ethos · ANÁLISE F1-T06 concluída sem alteração de produto: baseline Skip 0.0.6 e F1-T04 inspecionados; não existem candidatos/vínculos documentais; TESTE está vazia; DÚVIDA bloqueante sobre fixture sintética e destino do vínculo; implementação não autorizada nem iniciada.
-- 20:47 · Cliente · decisões F1-T06 registradas: fixture sintética interna no Skip, sem criar arquivo na pasta TESTE; vínculo destinado a novo lançamento sintético; task aguarda autorização explícita para implementar.
-- 14:30 · Cliente · B-107 recebido parcialmente e emenda B-106 recebida: competência 2026-08; nova pasta Drive `1f03hUNACl6PENUI1NHV5p3YEv4opmLm6` como fonte proposta; fronteira “boletos e contas a pagar identificadas”; documentos ausentes destacados; amostra indicada como 1 lançamento completo. Pasta ainda não acessada.
-- 14:30 · Ethos · F1-T07 permanece bloqueada: a SPEC exige 3 cenários — completo, sem documento e divergente da planilha —, mas a decisão recebida indica somente 1 lançamento completo. Não houve acesso externo, ingestão ou alteração de produto.
-- 14:44 · Cliente · resolução da amostra registrada: usar os 3 cenários exigidos pela SPEC — completo, sem documento e divergente da planilha. B-107 fechado documentalmente; emenda B-106 recebida; pasta nova ainda não acessada.
-- 15:00 · Ethos · F1-T07 implementada com B-107: metadata/listagem restrita da pasta `08.AGOSTO`; conferência das duas planilhas autorizadas; 3 cenários registrados e revalidados; sem PDFs acessados; QA 0.11; rollback/limpeza final concluídos; task aguarda teste humano.
+**Task:** F1-T07  
+**SPEC:** SPEC-1-004, com emenda operacional B-107 aceita pela Champion  
+**B-107 emendado:** competência `2026-08`; fonte `08.AGOSTO`; fronteira `boletos e contas a pagar identificadas`; quatro lançamentos independentes.  
+**Pasta:** `1f03hUNACl6PENUI1NHV5p3YEv4opmLm6`  
+**Versão Skip final:** 0.0.16 (`1818bfe`)
+
+## Aceite humano
+
+Daniela confirmou em 2026-09-15: **“tudo correto”**.
+
+## Emenda do recorte
+
+A SPEC originalmente exigia três cenários, incluindo uma divergência. A Champion autorizou a emenda para quatro itens sem cenário divergente, porque Starlink e Vivo são lançamentos independentes:
+
+1. Papel de Parede — completo;
+2. Adapta — sem documento;
+3. Internet Starlink — completo, R$339,00, fatura própria;
+4. Internet Vivo — completo, R$99,99, fatura própria.
+
+A limitação “cenário divergente não exercitado” permanece explícita; a SPEC não foi alterada.
+
+## Fontes e escopo
+
+- Metadados da pasta `08.AGOSTO` consultados com HTTP 200; nenhum PDF foi baixado ou aberto.
+- Foram usadas somente as planilhas autorizadas de conferência.
+- O extrato registra `Pagamento Internet Vivo - Julho 2026` no valor de R$99,99.
+- O detalhamento registra `Internet Starlink` no valor de R$339,00, com referência `NF 010898811 - STALINK`.
+- Os metadados listam documentos distintos: `FATURA VIVO.pdf` e `NF 010898811 - STALINK.pdf`.
+- A planilha local de custeio também confirma Starlink R$339,00 e Internet R$99,99 como linhas independentes, ambas associadas a Geraldo Tadeu.
+
+## Critérios exercitados no recorte emendado
+
+### CA-1-019 — período, fontes e fronteira
+
+**PASSOU.** O sistema registrou competência `2026-08`, fonte `08.AGOSTO`, fronteira aprovada e amostra de 4 itens antes da conferência.
+
+### CA-1-020 — lançamento rastreável ou pendência nomeada
+
+**PASSOU.** O smoke autenticado registrou:
+
+1. Papel de Parede — R$1.945,00, documento próprio, lançamento rastreável;
+2. Adapta — R$5.833,33, documento ausente, status `pendente`, sem lançamento automático;
+3. Internet Starlink — R$339,00, referência `NF 010898811 - STALINK.pdf`, lançamento rastreável;
+4. Internet Vivo — R$99,99, referência `FATURA VIVO.pdf`, lançamento rastreável.
+
+### CA-1-021 — pendência visível e fora dos totais
+
+**PASSOU.** Adapta permaneceu visível como pendência nomeada, sem lançamento automático.
+
+### CA-1-022 — conferência item a item
+
+**PASSOU no recorte emendado.** Os quatro itens foram registrados separadamente, com data, descrição, valor, responsável, referência documental e status. Starlink e Vivo não foram comparados entre si.
+
+**Limitação:** o cenário divergente da SPEC não foi exercitado, conforme emenda B-107 autorizada pela Champion.
+
+## Recuperação e limpeza
+
+- Reabertura do período após rollback: HTTP 200.
+- Conferência dos quatro itens: HTTP 201, `itens_criados=4`.
+- Limpeza final: HTTP 200, removeu 4 itens e 3 lançamentos sintéticos.
+- Consulta posterior: zero itens do recorte.
+- Nenhum arquivo ou planilha do Drive foi alterado.
+
+## Qualidade e segurança
+
+- QA oficial final do Skip 0.0.16 (`1818bfe`): setup, análise estática, build, integrações e testes — todos OK.
+- Migration `0005_emenda_b107_quatro_itens` aplicada durante o QA.
+- Formulário visual exibe quatro cartões independentes, com documento comprobatório próprio para cada item.
+- Nenhum PDF, token, segredo ou conteúdo documental foi persistido.
+- Baseline de tempo/esforço ainda não foi medido e não foi inventado.
+- Checklist auxiliar `agents/verificador-de-entrega.md` não existe no handoff operacional; checklist equivalente foi executado inline.
+
+## Estado de fechamento
+
+F1-T07 concluída após aceite humano. F1-T08 permanece bloqueada e não foi iniciada.
+
+## Histórico de correções
+
+- O primeiro painel não possuía formulário editável; corrigido na versão 0.0.12.
+- O transporte de itens aninhados foi normalizado; corrigido nas versões 0.0.13/0.0.14.
+- A reabertura após rollback foi corrigida na versão 0.0.15.
+- A mistura Starlink/Vivo foi corrigida na versão 0.0.16, com quatro itens independentes e sem cenário divergente.

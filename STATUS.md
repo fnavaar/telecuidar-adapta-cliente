@@ -3,9 +3,13 @@
 - **Fase:** 1 — núcleo financeiro e rastreabilidade.
 - **Progresso:** 6/8 tasks concluídas (75%).
 - **Task ativa:** F1-T07 — definir e conferir o primeiro período controlado.
-- **Situação:** novo recorte B-107 emendado e aguardando autorização específica; F1-T08 permanece bloqueada.
+- **Situação:** implementação do B-107 emendado concluída; aguardando teste humano da Champion. F1-T08 permanece bloqueada.
 - **Champion:** Daniela.
-- **B-107 emendado:** competência `2026-08`; fonte `08.AGOSTO`, pasta `1f03hUNACl6PENUI1NHV5p3YEv4opmLm6`; fronteira `boletos e contas a pagar identificadas`; amostra = 4 lançamentos: Papel de Parede completo, Adapta sem documento, Internet Starlink completo (R$339,00/fatura própria) e Internet Vivo completo (R$99,99/fatura própria).
-- **Conflito preservado:** a SPEC-1-004 exige 3 cenários, incluindo um divergente; a emenda aprovada pela Champion substitui o cenário divergente por dois lançamentos completos independentes. Não alterei a SPEC; a implementação aguarda nova autorização específica para esse recorte.
-- **Fontes confirmadas:** extrato registra Vivo R$99,99; planilha de detalhamento registra Starlink R$339,00; metadados listam faturas distintas. Nenhum PDF foi baixado ou aberto nesta correção.
-- **Próxima ação:** aguardar autorização explícita para implementar o recorte emendado de quatro itens sem cenário divergente.
+- **B-107 emendado:** competência `2026-08`; fonte `08.AGOSTO`; fronteira `boletos e contas a pagar identificadas`; 4 itens: Papel de Parede completo, Adapta sem documento, Internet Starlink completa e Internet Vivo completa.
+- **Separação confirmada:** Starlink = R$339,00 com `NF 010898811 - STALINK.pdf`; Vivo = R$99,99 com `FATURA VIVO.pdf`; cada uma tem lançamento próprio e não é comparada com a outra.
+- **Entrega:** migration `0005_emenda_b107_quatro_itens`; formulário com quatro cartões editáveis; backend e leitura aceitam `completo_starlink` e `completo_vivo`; sem campo de divergência ou valor de sistema neste recorte.
+- **Resultado automatizado:** 4 itens conferidos; Papel de Parede, Starlink e Vivo com lançamentos rastreáveis; Adapta como pendência sem lançamento; rollback HTTP 200 removeu 4 itens e 3 lançamentos sintéticos; ambiente limpo.
+- **Limitação explícita:** o cenário divergente exigido pela SPEC não foi exercitado, conforme emenda B-107 autorizada pela Champion; a SPEC não foi alterada.
+- **QA:** Skip 0.0.16 (`1818bfe`) passou em setup, análise estática, build, integrações e testes.
+- **Evidência:** `artifacts/f1-t07-evidencia.md`.
+- **Próxima ação:** Daniela deve testar os quatro cartões no preview, conferir Starlink/Vivo separados, verificar a pendência do Adapta e executar rollback; não concluir F1-T07 nem iniciar F1-T08 antes do aceite.

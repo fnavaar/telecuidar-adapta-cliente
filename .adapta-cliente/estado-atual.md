@@ -3,11 +3,11 @@
 - task_id: F1-T08
 - champion: Daniela
 - spec: 04_fase-atual/specs/spec-1-004-periodo-baseline.md
-- etapa: aguardando_autorizacao
-- autorizacao_implementacao: ausente
+- etapa: implementando
+- autorizacao_implementacao: confirmada em 2026-09-15T14:57:00-03:00 — “Sim, implementar F1-T08 conforme este plano”
 - teste_humano: pendente
-- verificacao_automatica: pendente — análise da F1-T08 concluída; pré-condição F1-T07 aceita; provas CA-1-023/024 ainda não executadas
+- verificacao_automatica: pendente — implementação autorizada; baseline técnico e provas CA-1-023/024 ainda em execução
 - aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-09-15-1315-separar-cobrancas-independentes.md
-- ultima_acao: F1-T08 analisada. DÚVIDA: a SPEC exige baseline medido ou explicitamente marcado [ESTIMATIVA], mas não define unidade/campos; o produto já tem correção/histórico de lançamentos, enquanto faltam histórico detalhado do período, demonstração formal de reprocessamento sem duplicidade e registro do baseline
-- proxima_acao: aguardar autorização explícita para implementar o plano da F1-T08, com baseline sem meta inventada e unidade/fonte registradas
-- atualizado_em: 2026-09-15T13:24:00-03:00
+- ultima_acao: autorização explícita recebida e task movida para implementando
+- proxima_acao: registrar baseline técnico e implementar somente histórico do período, reprocessamento sem duplicidade e baseline sem meta inventada
+- atualizado_em: 2026-09-15T14:57:00-03:00

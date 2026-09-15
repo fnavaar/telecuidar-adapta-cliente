@@ -3,11 +3,11 @@
 - task_id: F1-T08
 - champion: Daniela
 - spec: 04_fase-atual/specs/spec-1-004-periodo-baseline.md
-- etapa: em_correcao
+- etapa: aguardando_teste_humano
 - autorizacao_implementacao: confirmada em 2026-09-15T14:57:00-03:00 — “Sim, implementar F1-T08 conforme este plano”
-- teste_humano: pendente
-- verificacao_automatica: falhou — versão 0.0.17 passou QA; smoke encontrou histórico HTTP 400 por referência inexistente e reprocessamento HTTP 400 por helper de spread incompatível; correção aplicada no código; versões 0.0.18/0.0.19 tiveram timeout de estabilidade do backend durante deploy; versão 0.0.18 respondeu histórico HTTP 200 após recuperação, mas reprocessamento ainda exigia nova observação de deploy
-- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-09-15-1315-separar-cobrancas-independentes.md
-- ultima_acao: nova tentativa de deploy 0.0.19 para forçar atualização do hook de reprocessamento; integração falhou por HTTP 502 transitório no hook corte_gate_probe
-- proxima_acao: aguardar recuperação do backend, confirmar que o hook corrigido está ativo e repetir reprocessamento idempotente, histórico e limpeza
-- atualizado_em: 2026-09-15T15:02:00-03:00
+- teste_humano: pendente — Daniela deve validar histórico, correção, reprocessamento sem duplicidade, baseline e rollback no preview
+- verificacao_automatica: passou — QA Skip 0.0.20 (`1211cfc`) completo; migration 0006 aplicada; histórico HTTP 200; correção com Criacao/Correcao antes/depois; três reprocessamentos HTTP 200 com zero novos itens/lançamentos; baseline [ESTIMATIVA] persistido e idempotente; fixture sintética permanece disponível para teste humano
+- aprendizado: pendente — triagem será feita no fechamento após aceite humano
+- ultima_acao: F1-T08 implementada e revalidada; evidência `artifacts/f1-t08-evidencia.md` preparada; ambiente sintético aguarda teste humano e rollback
+- proxima_acao: teste humano de Daniela no preview e confirmação explícita do resultado
+- atualizado_em: 2026-09-15T15:23:38-03:00

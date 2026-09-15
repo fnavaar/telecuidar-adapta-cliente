@@ -1,14 +1,15 @@
 # STATUS — Telecuidar / MAX Soluções
 
 - **Fase:** 1 — núcleo financeiro e rastreabilidade.
-- **Progresso:** 7/8 tasks concluídas (87,5%).
-- **Task ativa:** F1-T08 — demonstrar o período, histórico e registrar baseline.
-- **Situação:** debug da F1-T08 concluído na versão Skip 0.0.21; três fixtures legadas da F1-T04 foram removidas por allowlist; aguardando novo teste humano da Champion. F1-T08 não está concluída e nenhuma task seguinte foi iniciada.
+- **Progresso:** 8/8 tasks concluídas (100%).
+- **Task ativa:** nenhuma; F1-T08 concluída.
+- **Situação:** F1-T08 fechada após teste humano “confirmado” e revalidação independente final. A Fase 1 aguarda validação do consultor; F2 não foi iniciada.
 - **Champion:** Daniela.
-- **F1-T08:** painel de demonstração, histórico do período, correção/reprocessamento idempotente e baseline medido/estimativa; migration `0006_periodo_historico_baseline` aplicada.
-- **Correção de ambiente:** rota autenticada `/backend/v1/lancamentos/limpar-fixtures-f1-t04`, com validação de ID, descrição, data, valor, referência e tipo; removeu exatamente 3 fixtures legadas e repetição foi idempotente.
-- **QA:** Skip 0.0.21 (`027719e`) passou em setup, análise estática, build, integrações e testes.
-- **Revalidação anterior preservada:** histórico HTTP 200; correção com antes/depois; três reprocessamentos HTTP 200 com zero novos itens/lançamentos; baseline `[ESTIMATIVA]` persistido e idempotente.
-- **Evidência:** `artifacts/f1-t08-evidencia.md`; Debug Summary `06_notas/debug/debug-2026-09-15-f1-t08-fixtures-legadas.md`.
-- **Segurança:** limpeza limitada às três fixtures sintéticas identificadas; nenhum dado real, PDF, token, segredo ou credencial foi acessado ou alterado.
-- **Próxima ação:** Daniela deve testar novamente o preview e confirmar que os três lançamentos legados não aparecem mais, preservando os critérios da F1-T08; não concluir a task sem esse aceite.
+- **F1-T07 concluída:** B-107 emendado, competência `2026-08`, fonte `08.AGOSTO`, fronteira `boletos e contas a pagar identificadas`; 4 itens independentes; Starlink R$339/fatura própria; Vivo R$99,99/fatura própria; Adapta pendente; Papel de Parede completo.
+- **F1-T08 concluída:** painel de demonstração, histórico do período, correção/reprocessamento idempotente, baseline `[ESTIMATIVA]` e limpeza restrita das três fixtures legadas F1-T04.
+- **QA final:** Skip 0.0.21 (`027719e`) passou em setup, análise estática, build, integrações e testes; migrations 0001–0006 aplicadas.
+- **Revalidação final:** 4 itens conferidos; 3 lançamentos rastreáveis; 1 pendência; correção com histórico antes/depois; dois reprocessamentos HTTP 200 sem novos itens/lançamentos; baseline preservado; rollback HTTP 200 removeu 4 itens/3 lançamentos; lista final sem lançamentos.
+- **Evidência:** `artifacts/f1-t08-evidencia.md`.
+- **Debug:** `06_notas/debug/debug-2026-09-15-f1-t08-fixtures-legadas.md`.
+- **Segurança:** nenhum dado real, PDF, token, segredo ou credencial foi acessado ou alterado; planilhas e arquivos do Drive não foram alterados.
+- **Próxima ação:** validação do consultor para encerramento formal da Fase 1; não iniciar F2 automaticamente.

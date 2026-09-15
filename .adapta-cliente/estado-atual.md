@@ -1,13 +1,13 @@
 # Estado atual — Adapta Cliente
 
-- task_id: F1-T07
+- task_id: F1-T08
 - champion: Daniela
 - spec: 04_fase-atual/specs/spec-1-004-periodo-baseline.md
-- etapa: concluida
-- autorizacao_implementacao: confirmada em 2026-09-15T13:05:00-03:00 — “Sim, implementar este recorte de 4 itens sem divergência”
-- teste_humano: aprovado em 2026-09-15T13:15:00-03:00 — “tudo correto”
-- verificacao_automatica: passou — revalidação independente HTTP 200/201; 4 itens (3 rastreáveis, 1 pendente); Starlink/Vivo separados; rollback removeu 4 itens/3 lançamentos; ambiente limpo; QA 0.0.16; migration 0005; secret/evidence scans limpos
+- etapa: aguardando_autorizacao
+- autorizacao_implementacao: ausente
+- teste_humano: pendente
+- verificacao_automatica: pendente — análise da F1-T08 concluída; pré-condição F1-T07 aceita; provas CA-1-023/024 ainda não executadas
 - aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-09-15-1315-separar-cobrancas-independentes.md
-- ultima_acao: F1-T07 concluída após aceite humano explícito; F1-T08 permanece bloqueada e não foi iniciada
-- proxima_acao: aguardar novo pedido para analisar a F1-T08; não iniciar automaticamente
-- atualizado_em: 2026-09-15T13:15:00-03:00
+- ultima_acao: F1-T08 analisada. DÚVIDA: a SPEC exige baseline medido ou explicitamente marcado [ESTIMATIVA], mas não define unidade/campos; o produto já tem correção/histórico de lançamentos, enquanto faltam histórico detalhado do período, demonstração formal de reprocessamento sem duplicidade e registro do baseline
+- proxima_acao: aguardar autorização explícita para implementar o plano da F1-T08, com baseline sem meta inventada e unidade/fonte registradas
+- atualizado_em: 2026-09-15T13:24:00-03:00

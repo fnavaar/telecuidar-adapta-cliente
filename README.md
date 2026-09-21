@@ -1,6 +1,6 @@
 # Workspace do cliente — Telecuidar / MAX Soluções
 
-Espaço operacional da Fase 1. Contém somente contexto liberado, SPECs, tasks, ata de corte, entregas e notas. Não contém análise interna, escopo-base/definitivo, metodologia, fases futuras ou transcrição bruta.
+Espaço operacional da Fase 2 — Consolidação e prestação visual. Contém somente contexto liberado, SPECs, tasks, ata de corte, entregas e notas. Não contém análise interna, escopo-base/definitivo, metodologia, fases futuras ou transcrição bruta.
 
 ## Como começar
 1. Leia `CLAUDE.md`, `01_projeto/constituicao.md` e `STATUS.md`.

@@ -6,11 +6,10 @@
 Apoiar a construção do núcleo financeiro que substituirá a planilha dinâmica e integrará a pasta financeira do cliente, com rastreabilidade e conferência humana.
 
 ## Protocolo
-- Fase atual: 1.
-- F1-T01 concluída documentalmente; única task elegível: F1-T02, ainda sem autorização de execução.
+- Fase atual: 2 — Consolidação e prestação visual.
+- Única task elegível: F2-T01 (fechar insumos B-201/B-202 com a Champion). F2-T02..T05 bloqueadas por dependência.
 - Não invente campo, fórmula, estado, permissão ou dado.
-- A planilha/amostra, allowlist e política foram seladas na F1-T01.
-- F1-T02 prova o gate de zero ingestão; não ingere, modela ou integra dados.
-- Simplificação: bloqueios de tasks futuras não impedem a task elegível atual; preserve uma task por vez e o teste humano.
-- Uma task por vez; teste humano antes da próxima.
+- Uma task por vez; análise e autorização precedem execução; teste humano precede conclusão.
+- Invariantes da F2: pendência de validação fora de totais/gráficos (RN-112/202/208); proveniência real/sintético/estimado em todo número (RN-204/209/215); agregação só sobre lançamentos atômicos (RN-201); valor corrente + trilha, sem recálculo (RN-203); fixtures isoladas com limpeza própria (RN-206); fallback B-106 preservado; RBAC/diretores na F3.
+- Dados reais: nenhum dado real novo é exigido pela F2; provas usam o período B-107 (competência 2026-08) e fixtures sintéticas isoladas.
 - Ação externa exige confirmação imediata.

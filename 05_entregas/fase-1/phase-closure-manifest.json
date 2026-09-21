@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "adapta-phase-closure/v1",
+  "phase": 1,
+  "closedAt": "2026-09-21T17:12:51.110Z",
+  "activeDigest": "1ae1cd83a3753b3f03f6e2de52adbf9a21df3ba7e7a20fb2a26da1ebdcf4a27d",
+  "files": [
+    {
+      "relative": "fase.md",
+      "sha256": "1c68367536038400364c6d8781ab42a9b4ccc460179b82cbfa9ddfb5f7177a57"
+    },
+    {
+      "relative": "specs/spec-1-001-fontes-politica-allowlist.md",
+      "sha256": "8205bb84b755ed86223ec4505bde0ec6c1c12cc8adaa254d3c70bae7592705f8"
+    },
+    {
+      "relative": "specs/spec-1-002-modelo-lancamentos.md",
+      "sha256": "17d78adc62ff3824ed4acb063e559b9bb6581494f834fd9eb0539ef65ed62d82"
+    },
+    {
+      "relative": "specs/spec-1-003-integracao-drive.md",
+      "sha256": "d7dbbf0e59d444f5202806b7dd0b2947f29fa0c84d29ebb8753f7cf20cf1c33e"
+    },
+    {
+      "relative": "specs/spec-1-004-periodo-baseline.md",
+      "sha256": "7baa23b9d12de0f2b2c9d0b4d304b7178f546aedf5299743b4daeb06db4e4501"
+    }
+  ],
+  "checkSha256": "93b791b0283c4292e7914aca126adf62d4c79dcfaf2e151ee6bb4ea5f02f3c42",
+  "manifestDrift": [
+    {
+      "path": "04_fase-atual/fase.md",
+      "status": "alterado-desde-manifesto",
+      "manifestSha256": "9b3431aa6d67cf93bf63080c16357592d169eb7aa6b27c69fae6a1aa423811fb",
+      "currentSha256": "1c68367536038400364c6d8781ab42a9b4ccc460179b82cbfa9ddfb5f7177a57"
+    },
+    {
+      "path": "04_fase-atual/specs/spec-1-002-modelo-lancamentos.md",
+      "status": "alterado-desde-manifesto",
+      "manifestSha256": "8131342df467199791ef3b0916f70fc98f80b055592eb4b6a3e1a2fa334959ae",
+      "currentSha256": "17d78adc62ff3824ed4acb063e559b9bb6581494f834fd9eb0539ef65ed62d82"
+    }
+  ]
+}

@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-21
+- Fase 1 encerrada com validação do consultor: check-fase-1 APROVADO (digest ativo `1ae1cd83a3753b3f03f6e2de52adbf9a21df3ba7e7a20fb2a26da1ebdcf4a27d`); F1 arquivada em `05_entregas/fase-1/` com README e closure manifest.
+- Evoluções da F1 (EV-F1-01..09) decididas; delta-fase-2 aplicado às SPECs.
+- Fase 2 liberada: SPEC-2-001 consolidação (CA-2-001..006), SPEC-2-002 dashboard (CA-2-007..011), SPEC-2-003 explicação rastreável/conferência (CA-2-012..015); tasks F2-T01..T05 lineares.
+- Somente F2-T01 é elegível (insumos B-201/B-202 com a Champion); F2-T02..T05 bloqueadas por dependência.
+- Manifesto do handoff atualizado para phase 2 com hashes das SPECs F2; nenhuma implementação ou dado real novo.
+
 ## 2026-09-11
 - Workspace operacional da Fase 1 criado.
 - Quatro SPECs e oito tasks liberadas documentalmente.

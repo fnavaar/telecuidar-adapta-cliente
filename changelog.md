@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-09-22
+- Ethos · ANÁLISE F2-T01 concluída: B-201 (fórmulas de consolidação/alocação por participante e classificação) não está coberto pelo Anexo F; B-202 (competência versus data de pagamento) não está declarado. Plano: registrar decisões e aceite da Champion, sem código, migration, ingestão ou alteração da F1; F2-T01 aguarda autorização explícita e F2-T02..T05 permanecem bloqueadas.
+
 ## 2026-09-21
 - Fase 1 encerrada com validação do consultor: check-fase-1 APROVADO (digest ativo `1ae1cd83a3753b3f03f6e2de52adbf9a21df3ba7e7a20fb2a26da1ebdcf4a27d`); F1 arquivada em `05_entregas/fase-1/` com README e closure manifest.
 - Evoluções da F1 (EV-F1-01..09) decididas; delta-fase-2 aplicado às SPECs.

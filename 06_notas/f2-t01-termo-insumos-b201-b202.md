@@ -5,7 +5,7 @@
 **SPEC:** SPEC-2-001 — Consolidação por período, participante e classificação  
 **Data do registro:** 2026-09-23  
 **Fonte do aceite:** resposta da Champion no formulário de decisões da F2-T01: “Registrar decisões aprovadas”  
-**Status do termo:** recebido; aguardando teste humano da Champion para encerramento da task
+**Status do termo:** **ACEITO** pela Champion Daniela em 2026-09-23 — “CORRETO”
 
 ## Pré-condições confirmadas
 
@@ -48,6 +48,5 @@ A Champion aprovou que a consolidação financeira deve ser orientada por **conc
 
 ## Aceite
 
-- **Champion:** Daniela — decisão recebida no formulário em 2026-09-23.
-- **Consultor:** validação formal da Fase 1 já registrada no repositório; este termo registra o novo insumo da Champion para a Fase 2.
-- **Próximo gate:** teste humano da Champion sobre o registro deste termo; F2-T02 permanece bloqueada até a conclusão da F2-T01.
+- **Champion:** Daniela — decisão recebida no formulário em 2026-09-23 e teste humano confirmado em 2026-09-23: “CORRETO”.
+- **Verificação independente:** termo, SPEC, estado, Fase 1 arquivada, Skip e migrations revalidados; nenhum código, migration, ingestão ou alteração de produto foi realizado nesta task.

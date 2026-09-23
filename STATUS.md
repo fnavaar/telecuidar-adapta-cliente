@@ -2,10 +2,12 @@
 
 - **Fase:** 2 — Consolidação e prestação visual.
 - **Fase 1:** ENCERRADA em 2026-09-21 (check-fase-1 APROVADO; 8/8 tasks com aceites humanos da Champion Daniela; QA final Skip 0.0.21 `027719e`; digest do estado encerrado `1ae1cd83a3753b3f03f6e2de52adbf9a21df3ba7e7a20fb2a26da1ebdcf4a27d`; arquivada em `05_entregas/fase-1/`).
-- **Progresso F2:** 0/5 tasks; F2-T01 em bloqueio de requisito.
-- **Task ativa:** F2-T01 — bloqueada por dúvida de requisito em B-201/B-202.
-- **Situação:** a autorização para executar F2-T01 foi recebida, mas a execução documental não pode fechar o gate sem decisões aceitas da Champion/Consultor. Nenhum código, migration, ingestão ou alteração do Skip foi realizado.
+- **Progresso F2:** 0/5 tasks; F2-T01 em execução documental, aguardando teste humano.
+- **Task ativa:** F2-T01 — termo de insumos B-201/B-202 registrado.
+- **Situação:** B-201 aprovado operacionalmente por conciliação bancária via OFX: entradas = aportes, saídas = contas a pagar, alocação por centro de custo e saldo conforme banco. B-202 aprovado por data efetiva do pagamento. Nenhuma integração OFX, código, migration ou ingestão foi iniciada nesta task.
 - **Champion:** Daniela.
-- **DÚVIDA B-201:** o Anexo F aprova campos, status, pendência, correção e idempotência, mas não define fórmula para consolidação/alocação por participante e classificação. Sem fórmula aceita, os totais por participante ficam indisponíveis; não podem ser tratados como zero nem inferidos das tabelas agregadas da planilha.
-- **DÚVIDA B-202:** o B-107 registra competência `2026-08`, mas não resolve o regime geral de consolidação entre competência e data de pagamento. A SPEC permite manter o regime vigente do B-107, mas isso precisa de aceite explícito.
-- **Próxima ação:** registrar as decisões/aceites da Champion/Consultor para B-201 e B-202; F2-T02..T05 permanecem bloqueadas.
+- **Evidência:** `06_notas/f2-t01-termo-insumos-b201-b202.md`.
+- **Limites:** sem percentuais ou regras de identificação inventadas; sem centro de custo presumido; transações sem correspondência, centro de custo, evidência ou data efetiva válida ficam como pendências nomeadas.
+- **Invariantes F2:** pendência de validação fora de totais/gráficos (RN-112/202/208); proveniência real/sintético/estimado em todo número (RN-204/209/215); agregação só sobre lançamentos atômicos (RN-201); valor corrente + trilha, sem recálculo (RN-203); fixtures isoladas por task com limpeza própria (RN-206); fallback B-106 preservado; RBAC/diretores na F3.
+- **Bloqueios F2:** B-201 e B-202 registrados; B-203 (formato da prestação) e B-204 (roteiro de conferência) permanecem para tasks posteriores.
+- **Próxima ação:** Daniela deve testar e confirmar o termo B-201/B-202; após confirmação, F2-T01 poderá ser concluída; não iniciar F2-T02 automaticamente.

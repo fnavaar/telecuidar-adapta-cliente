@@ -61,6 +61,10 @@
 
 Nenhum adjetivo ou número não derivável foi introduzido.
 
+### CA-2-011 — aceite humano/B-203
+
+**PASSOU.** A Champion Daniela conferiu o dashboard no preview e respondeu `teste ok` em 2026-09-23, aprovando o formato mínimo B-203.
+
 ### Caminhos obrigatórios
 
 - **Período vazio:** painel exibiu `Dashboard vazio` e não renderizou números parciais.
@@ -90,4 +94,4 @@ No recorte canônico B-107, a prestação mostrou:
 
 ## Estado de parada
 
-Automação concluída. A F2-T03 aguarda a conferência humana da Champion e o aceite do formato mínimo B-203; não marcar como concluída nem iniciar F2-T04 antes da confirmação.
+A implementação, a automação e o aceite humano foram concluídos. Não iniciar F2-T04 automaticamente.

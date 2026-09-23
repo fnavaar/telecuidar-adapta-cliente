@@ -60,6 +60,10 @@ Starlink e Vivo permaneceram lançamentos independentes; nenhum agrupamento foi 
 
 **PASSOU.** O lançamento Papel de Parede abriu histórico HTTP 200 com operações `Criacao` e `Correcao`, preservando antes/depois, ator e correlação.
 
+### CA-2-006 — bloqueio nomeado quando o insumo bancário não existe
+
+**PASSOU.** A consolidação exibiu `B-201-OFX`, `B-201-CENTRO-CUSTO` e `B-202-DATA-EFETIVA`, mantendo saldo bancário indisponível e sem inventar centro de custo ou data efetiva.
+
 ### Regressão e recuperação
 
 **PASSOU.**
@@ -80,6 +84,7 @@ Starlink e Vivo permaneceram lançamentos independentes; nenhum agrupamento foi 
 - Nenhuma alteração na planilha ou no Drive.
 - Nenhum lançamento/histórico da F1 alterado fora do recorte sintético B-107.
 - Nenhuma credencial, token ou segredo persistido.
+- Secret-pattern scan no repositório: **sem resultados**.
 - Fixture B-107 limpa ao final.
 
 ## Limitação conhecida

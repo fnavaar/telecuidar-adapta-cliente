@@ -1,7 +1,8 @@
 # Changelog
 
 ## 2026-09-23
-- Daniela · Task F2-T01 concluída: CA-2-006 aprovado; B-201 registrado como conciliação bancária via OFX (entradas = aportes, saídas = contas a pagar, alocação por centro de custo, saldo conforme banco) e B-202 como data efetiva do pagamento; teste humano “CORRETO”; revalidação independente passou; nenhum OFX, código, migration ou dado real processado. F2-T02 é a próxima task elegível, ainda não iniciada.
+- Ethos · ANÁLISE F2-T02 concluída: RED no preview confirmou ausência da consolidação; modelo F1/hook/telas inspecionados; plano de rota server-side e painel somente leitura sobre lançamentos atômicos, com proveniência, pendências e drill-down; lacunas de OFX, data efetiva e centro de custo não serão inventadas; Skip Cloud retornou 503 ao inventário de coleções/migrations; nenhum arquivo do Skip alterado; F2-T02 aguarda autorização explícita.
+- Daniela · Task F2-T01 concluída: CA-2-006 aprovado; B-201 registrado como conciliação bancária via OFX (entradas = aportes, saídas = contas a pagar, alocação por centro de custo, saldo conforme banco) e B-202 como data efetiva do pagamento; teste humano “CORRETO”; revalidação independente passou; nenhum OFX, código, migration ou dado real processado.
 - Daniela · Decisões B-201/B-202 recebidas no formulário da F2-T01: consolidação por conciliação bancária via OFX; entradas tratadas como aportes; saídas como contas a pagar; alocação por centro de custo; saldo conforme banco; regime temporal pela data efetiva do pagamento. Termo registrado em `06_notas/f2-t01-termo-insumos-b201-b202.md`; verificação documental passou; nenhum OFX, integração, código, migration ou dado real processado; F2-T01 aguarda teste humano.
 
 ## 2026-09-22

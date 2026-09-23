@@ -3,11 +3,11 @@
 - task_id: F2-T04
 - champion: Daniela
 - spec: 04_fase-atual/specs/spec-2-003-explicacao-conferencia.md
-- etapa: aguardando_autorizacao
-- autorizacao_implementacao: ausente
+- etapa: implementando
+- autorizacao_implementacao: confirmada em 2026-09-23T14:52:00-03:00 — “sim”
 - teste_humano: pendente
-- verificacao_automatica: pendente — análise documental concluída; F2-T03 aceita; B-204 não formalizado; padrão F1-T08 comprovado em `artifacts/f1-t08-evidencia.md` e SPEC-1-004; Skip 0.0.25 e migrations 0001–0006 preservados
+- verificacao_automatica: pendente — autorização documental confirmada; padrão F1-T08, F2-T03 e SPEC-2-003 revalidados; formalização em andamento
 - aprendizado: pendente
-- ultima_acao: F2-T04 selecionada após novo pedido; SPEC-2-003, B-204, F1-T08, F2-T03 e evidências atuais inspecionados; nenhum arquivo de produto alterado
-- proxima_acao: aguardar autorização para formalizar documentalmente o roteiro B-204 baseado no padrão comprovado da F1-T08
-- atualizado_em: 2026-09-23T14:51:12-03:00
+- ultima_acao: autorização explícita recebida após análise; dependência F2-T03 e evidências F1-T08 revalidadas
+- proxima_acao: formalizar `06_notas/f2-t04-roteiro-conferencia-b204.md` sem alterar código, dados ou telas
+- atualizado_em: 2026-09-23T14:53:25-03:00

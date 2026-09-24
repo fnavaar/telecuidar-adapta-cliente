@@ -3,11 +3,11 @@
 - task_id: F2-T05
 - champion: Daniela
 - spec: 04_fase-atual/specs/spec-2-003-explicacao-conferencia.md
-- etapa: aguardando_teste_humano
+- etapa: concluida
 - autorizacao_implementacao: confirmada em 2026-09-24T13:45:00-03:00 — “continuar na tarefa anterior”
-- teste_humano: pendente — conferir o registro B-204 executado, resultado preliminar ACEITO e confirmar ou apontar pendências
-- verificacao_automatica: passou — conferência sintética B-107 executada; CA-2-012..015 preliminarmente passaram; tabela/gráfico/explicação/proveniência/rastreio conferidos; divergência R$0,00; erro/vazio exercitados; rollback removeu 4 itens/3 lançamentos; ambiente final limpo; nenhum OFX/dado real; Skip 0.0.25 e migrations 0001–0006 preservados
-- aprendizado: pendente
-- ultima_acao: roteiro B-204 executado e registro `06_notas/f2-t05-registro-conferencia-2026-08.md` criado; fixture sintética limpa
-- proxima_acao: Daniela deve confirmar o resultado ACEITO ou informar pendências com causa; não fechar F2-T05 antes dessa confirmação
-- atualizado_em: 2026-09-24T13:49:56-03:00
+- teste_humano: aprovado em 2026-09-24T13:53:00-03:00 — “sim”
+- verificacao_automatica: passou — revalidação independente da conferência final passou CA-2-012..CA-2-015; B-107 sintético com tabela/gráfico/explicação/proveniência/rastreio; divergência R$0,00; erro/vazio; rollback removeu 4 itens/3 lançamentos; ambiente final limpo; nenhum OFX/dado real; Skip 0.0.25 (`21a7adb`); migrations 0001–0006 e coleções F1 preservadas
+- aprendizado: sem_sinal:nenhum novo padrão além dos aprendizados B-204/F1-T08
+- ultima_acao: F2-T05 fechada após aceite humano final “sim” e revalidação independente
+- proxima_acao: aguardar validação formal do consultor da Fase 2; não iniciar F3 automaticamente
+- atualizado_em: 2026-09-24T13:57:14-03:00

@@ -1,6 +1,8 @@
 # Changelog
 
-## 2026-09-23
+## 2026-09-24
+- 2026-09-24 · Daniela · Task F2-T05 concluída: conferência final da prestação sintética B-107 aceita com “sim”; CA-2-012..015 revalidados independentemente; tabela, gráfico, explicação, pendência fora do gráfico, proveniência, rastreio, erro/vazio e divergência R$0,00; rollback limpo; registro `06_notas/f2-t05-registro-conferencia-2026-08.md`.
+- Fase 2 operacionalmente concluída (5/5 tasks), aguardando validação formal do consultor; F3 não iniciada.
 - 2026-09-23 · Daniela · Task F2-T04 concluída: roteiro B-204 formalizado e aceito com “ACEITO”; revisão independente confirmou alinhamento à SPEC-2-003, F1-T08 e F2-T03, matriz CA-2-012..015 e tratamento de divergências/aceite ambíguo; nenhum código, dado, tela, permissão ou migration alterado; roteiro em `06_notas/f2-t04-roteiro-conferencia-b204.md`.
 - 2026-09-23 · Daniela · Task F2-T03 concluída: dashboard somente leitura no Skip 0.0.25 (`21a7adb`) aceito após teste humano “teste ok”; B-203/formato mínimo aceito; CA-2-007..011 revalidados independentemente; tabela, gráfico, explicação, proveniência, pendência fora do gráfico, erro/vazio e rollback limpo; evidência `artifacts/f2-t03-evidencia.md`; captura `artifacts/f2-t03-dashboard-prestacao.png`.
 - 2026-09-23 · Daniela · Task F2-T02 concluída: consolidação somente leitura no Skip 0.0.24 (`32d9b9e`) aceita após teste humano “teste ok”; CA-2-001..006 revalidados independentemente, B-107 sintético conferido (R$2.383,99 em 3 lançamentos e 1 pendência), proveniência, drill-down, B-201/B-202, período vazio, reprocessamentos idempotentes e rollback limpo; evidência `artifacts/f2-t02-evidencia.md`.

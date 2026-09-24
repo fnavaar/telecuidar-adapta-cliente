@@ -1,6 +1,6 @@
 # Tasks Gerais — Fase 2 — MAX Soluções / Telecuidar
 
-**Total:** 5 tasks · **Concluídas:** 4/5 · **Próxima task:** F2-T05 · **Regra simples:** uma task por vez; análise e autorização precedem execução; teste humano precede conclusão.
+**Total:** 5 tasks · **Concluídas:** 5/5 · **Próxima task:** nenhuma — aguardando validação formal do consultor · **Regra simples:** uma task por vez; análise e autorização precedem execução; teste humano precede conclusão.
 
 ## Tasks
 
@@ -10,7 +10,7 @@
 | F2-T02 | Construir e provar a consolidação no Skip | Ethos | SPEC-2-001 | CA-2-001..006 | Fluxo e regras; TDD da SPEC | RED + GREEN período B-107 + REGRESSÃO | Testes, capturas, evidência `artifacts/f2-t02-evidencia.md` | F2-T01 aceita; Anexo F vigente | Consolidação lê e não escreve; F1 intacta | 2 | CONCLUÍDA — aceite humano “teste ok” em 2026-09-23; Skip 0.0.24 (`32d9b9e`); CA-2-001..006; evidência `artifacts/f2-t02-evidencia.md`; revalidação independente e rollback limpo |
 | F2-T03 | Construir e provar o dashboard do período | Ethos | SPEC-2-002 | CA-2-007..011 | Fluxo e regras; TDD da SPEC | RED prova negativa da pendência fora do gráfico + GREEN + conferência humana | Capturas, evidência, aceite do formato | F2-T02 aceita; B-203 | Dashboard lê somente da consolidação; prestação oficial só após conferência | 3 | CONCLUÍDA — aceite humano “teste ok” em 2026-09-23; B-203 aceito; Skip 0.0.25 (`21a7adb`); CA-2-007..011; evidência `artifacts/f2-t03-evidencia.md`; captura `artifacts/f2-t03-dashboard-prestacao.png`; revalidação independente e rollback limpo |
 | F2-T04 | Formalizar roteiro de conferência (B-204) | Champion + Consultor | SPEC-2-003 | CA-2-013 (gate de insumo) | Contexto e decisões fechadas; Fluxo e regras | B-204 registrado ou padrão F1-T08 declarado | Roteiro com aceite da Champion | F2-T03 aceita | Roteiro documental aceito; nenhuma alteração de telas | 4 | CONCLUÍDA — aceite humano “ACEITO” em 2026-09-23; roteiro `06_notas/f2-t04-roteiro-conferencia-b204.md`; matriz CA-2-012..015; revalidação independente; nenhum produto alterado |
-| F2-T05 | Executar a conferência da prestação e fechar a F2 | Champion + Consultor | SPEC-2-003 | CA-2-012..015 | Resultado observável; TDD da SPEC; Handoff e operação | Conferência executada + registro | Roteiro executado, aceite/pendências, STATUS/changelog | F2-T04 aceita | Prestação oficial com proveniência e aceite registrado; não iniciar F3 | 5 | BLOQUEADA até novo pedido; F2-T04 concluída |
+| F2-T05 | Executar a conferência da prestação e fechar a F2 | Champion + Consultor | SPEC-2-003 | CA-2-012..015 | Resultado observável; TDD da SPEC; Handoff e operação | Conferência executada + registro | Roteiro executado, aceite/pendências, STATUS/changelog | F2-T04 aceita | Prestação oficial com proveniência e aceite registrado; não iniciar F3 | 5 | CONCLUÍDA — aceite humano final “sim” em 2026-09-24; registro `06_notas/f2-t05-registro-conferencia-2026-08.md`; CA-2-012..015; divergência R$0,00; rollback limpo |
 
 ## Notas
 

@@ -7,7 +7,7 @@
 - **Preview/versão:** `https://financeiro-telecuidar-91e6d--preview.goskip.app` · Skip 0.0.25 (`21a7adb`)
 - **Período/fonte/fronteira:** `2026-08` · `08.AGOSTO` · boletos e contas a pagar identificadas
 - **Tipo:** sintética controlada; nenhum OFX e nenhum dado real processado
-- **Resultado preliminar:** **ACEITO**, pendente de confirmação humana final do resultado nesta task
+- **Resultado:** **ACEITO** — confirmado pela Champion Daniela em 2026-09-24 13:53 (horário do canal), resposta literal: “sim”
 
 ## Pré-condições
 
@@ -36,6 +36,13 @@
 - Consulta final: 0 lançamentos; período `rollback`; resumo nulo; `PERIODO_VAZIO`, B-201 e B-202 nomeados.
 - Nenhum OFX, planilha ou Drive tocado.
 
-## Aceite final
+## Critérios
 
-O resultado preliminar é `ACEITO` e aguarda a confirmação humana final da Champion nesta task. A prestação só será considerada oficial após esse aceite registrado.
+- **CA-2-012:** PASSOU — explicação rastreada aos números da consolidação e aos lançamentos de origem.
+- **CA-2-013:** PASSOU — conferência registrada com resultado `ACEITO` e aceite literal da Champion.
+- **CA-2-014:** PASSOU — proveniência sintética/indisponível presente nos números conferidos.
+- **CA-2-015:** PASSOU — nenhuma divergência; diferença observada R$0,00; nenhuma correção silenciosa.
+
+## Fechamento
+
+A conferência final da prestação foi aceita. A Fase 2 está operacionalmente concluída, aguardando validação formal do consultor. A Fase 3 não foi iniciada.
